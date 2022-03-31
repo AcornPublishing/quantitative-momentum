@@ -1,0 +1,446 @@
+%%%%% Please note that the below listed 2 lines needs to be moved to %%%%
+%%%%% a new file 'c05.tml' and the same should be compiled to get the  %%%%
+%%%%% typeset pages                                                  %%%%
+\def\xmlfile{c05.tml}
+\input xmltex
+%%%%% END  %%%%%%%%%%%%%%%%%%%%%%%%
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE component SYSTEM "file://chgnsm02/macdata/Books/ptg/Books-Documents/Approved-Documents/Guidelines/WileyML3G/WileyML_3G_v2.0/Wileyml3gv20-flat.dtd">
+<component version="2.0" xmlns:cms="http://www.wiley.com/namespaces/wiley" xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley" type="bookChapter" xml:lang="en" xml:id="w9781119237198c05">
+<?xmltex \pgtag{\IIIProofVersionInfo{c05}}?>
+<?xmltex \pgtag{\setcounter{chapter}{4}\setcounter{page}{79}}?>
+<?xmltex \pgtag{\def\Gpath{u:/books/Wiley/Pd/E-line/Reprint/Gray37198/figures/iround}%
+}?>
+<header xml:id="c05-hdr-0001">
+<publicationMeta level="product">
+<publisherInfo>
+<publisherName>John Wiley &amp; Sons, Inc.</publisherName>
+<publisherLoc>Hoboken, New Jersey</publisherLoc>
+</publisherInfo>
+<isbn type="print-13">9781119237198</isbn>
+<titleGroup><title type="main" sort="QUANTITATIVE MOMENTUM">Quantitative Momentum</title></titleGroup>
+<copyright ownership="publisher">Copyright &copy; 2016 by John Wiley &amp; Sons, Inc. All rights reserved.</copyright>
+<numberingGroup>
+<numbering type="edition" number="1">1st Edition</numbering>
+</numberingGroup>
+<creators><creator xml:id="cr-0001" creatorRole="author"><personName><givenNames>Wesley R.</givenNames> <familyName>Gray</familyName></personName></creator></creators>
+<subjectInfo>
+<subject href="http://psi.wiley.com/subject/ME20">n/a</subject>
+</subjectInfo>
+</publicationMeta>
+<publicationMeta level="unit" position="60" type="chapter">
+<idGroup>
+<id type="unit" value="c05"/>
+<id type="file" value="c05"/>
+</idGroup>
+<titleGroup><title type="name">Chapter</title></titleGroup>
+<eventGroup>
+<event type="xmlCreated" agent="SPi Global" date="2016-07-12"/>
+</eventGroup>
+<numberingGroup>
+<numbering type="main">5</numbering>
+</numberingGroup>
+</publicationMeta>
+<contentMeta>
+<titleGroup><title type="main">The Basics of Building a Momentum Strategy</title></titleGroup>
+</contentMeta>
+</header>
+<body sectionsNumbered="no" xml:id="c05-body-0001"><section type="opening" xml:id="c05-sec-0001"><p xml:id="c05-para-0001"><?xmltex \OrgFixedPosition{c05-blkfxd-0001}?>
+<blockFixed type="standFirst" xml:id="c05-blkfxd-0001"><p xml:id="c05-para-0002">&ldquo;I contend that financial markets are always wrong&hellip;&rdquo;</p>
+<source>&bond;George Soros, <i>The Alchemy of Finance</i><link href="c05-note-0001"/></source>
+</blockFixed></p>
+<p xml:id="c05-para-0003"><?xmltex \pgtag{\firstlet}?>Part One of this book leaves us with a central message: Momentum should be considered by all investors. And the great paradox is that faithful value investors&mdash;those who are probably the least likely to actually implement a momentum approach&mdash;stand to gain the most by complementing their value portfolio with a momentum strategy. Perhaps this is for the best, and is a reason why value and momentum in combination&mdash;operating as a system&mdash;will continue to provide expected long&hyphen;term portfolio benefits: Each investment religion is too strict, and thus slow to embrace nonconforming ideas. But assuming we have moved past the religious debate between value and momentum, or at least raised the curiosity level of dyed&hyphen;in&hyphen;the&hyphen;wool value investors, it is now time to get our hands dirty and build a momentum approach that can be used in practice. We tackle this subject by breaking this chapter into the following components:
+<list xml:id="c05-list-0001" style="bulleted"><listItem xml:id="c05-li-0001">How to calculate generic momentum</listItem>
+<listItem xml:id="c05-li-0002">Describe how look&hyphen;back windows affect momentum</listItem>
+<listItem xml:id="c05-li-0003">Describe how portfolio construction affects momentum</listItem>
+</list>
+</p>
+<p xml:id="c05-para-0004">The remainder of this chapter is dedicated to outlining each of these steps in greater detail.</p></section>
+<?xmltex \pgtag{\vfill\eject}?>
+<section xml:id="c05-sec-0002"><title type="main">How to<?xmltex \pgtag{\protect\nobreak}?> Calculate Generic Momentum</title><p xml:id="c05-para-0005">How do we measure the &ldquo;momentum&rdquo; of a stock? The simple method is to calculate the total return (including dividends) of a stock over some particular look&hyphen;back period (e.g., the past 12 months).</p>
+<p xml:id="c05-para-0006">A quick example will demonstrate the concept, using the total return of Apple&apos;s stock in 2014. Here we calculate the cumulative return to Apple over the past 12 months (the &ldquo;look&hyphen;back&rdquo; period). To calculate the cumulative return over the past 12 months, we take the net return streams from each month and turn them into gross returns by adding 1. Thus, if Apple&apos;s net returns for January are &ndash;10.77 percent, Apple&apos;s gross returns for January are 0.8923 (&ndash;0.1077 &plus; 1).</p>
+<p xml:id="c05-para-0007">Then, we multiply all the gross return series (i.e., months) and subtract 1 to find the cumulative 12&hyphen;month net return. For example, based on the data from Apple in 2014, the cumulative returns in December (momentum score; see Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0001"/>) are calculated as follows:
+<displayedItem type="mathematics" numbered="no" xml:id="c05-disp-0001"><?xmltex \pgtag{\mathmlalign}?><math display="block" overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><mrow><mtable><mtr><mtd><mfenced open="(" close=")"><mn>0.8923</mn></mfenced><mfenced open="(" close=")"><mn>1.0575</mn></mfenced><mfenced open="(" close=")"><mn>1.0200</mn></mfenced><mfenced open="(" close=")"><mn>1.0994</mn></mfenced><mfenced open="(" close=")"><mn>1.0787</mn></mfenced><mfenced open="(" close=")"><mn>1.0277</mn></mfenced><mfenced open="(" close=")"><mn>1.0287</mn></mfenced><mfenced open="(" close=")"><mn>1.0775</mn></mfenced></mtd></mtr>
+<mtr><mtd><mfenced open="(" close=")"><mn>0.9829</mn></mfenced><mfenced open="(" close=")"><mn>1.0720</mn></mfenced><mfenced open="(" close=")"><mn>1.1060</mn></mfenced><mfenced open="(" close=")"><mn>0.9281</mn></mfenced><mspace width="0.25em"/><mo>&ndash;</mo><mspace width="0.25em"/><mn>1</mn><mo>=</mo><mn>40.62</mn><mo>&percnt;</mo></mtd></mtr></mtable></mrow></math></displayedItem></p>
+<?xmltex \OrgFixedPosition{c05-tbl-0001}?>
+<?xmltex \pgtag{\bgroup\FloatPositionBottrue}?><tabular xml:id="c05-tbl-0001"><title type="main">Simple 12&hyphen;Month Momentum Example for Apple</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="4"><colspec colnum="1" colname="col1" align="center"/><colspec colnum="2" colname="col2" align="center"/><colspec colnum="3" colname="col3" align="center"/><colspec colnum="4" colname="col4" align="center"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}rd{6}cc@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" align="left" xml:id="c05-ent-0001"></entry><entry colname="col2" xml:id="c05-ent-0002" lwPstyle="TabularHead">Stock Returns</entry><entry colname="col3" xml:id="c05-ent-0003" lwPstyle="TabularHead">1&plus;Return</entry><entry colname="col4" xml:id="c05-ent-0004" lwPstyle="TabularHead">Momentum</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0005">1/31/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0006">&ndash;10.77&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0007">0.8923</entry>
+<entry colname="col4" xml:id="c05-ent-0008"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0009">2/28/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0010">5.75&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0011">1.0575</entry>
+<entry colname="col4" xml:id="c05-ent-0012"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0013">3/31/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0014">2.00&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0015">1.0200</entry>
+<entry colname="col4" xml:id="c05-ent-0016"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0017">4/30/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0018">9.94&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0019">1.0994</entry>
+<entry colname="col4" xml:id="c05-ent-0020"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0021">5/30/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0022">7.87&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0023">1.0787</entry>
+<entry colname="col4" xml:id="c05-ent-0024"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0025">6/30/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0026">2.77&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0027">1.0277</entry>
+<entry colname="col4" xml:id="c05-ent-0028"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0029">7/31/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0030">2.87&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0031">1.0287</entry>
+<entry colname="col4" xml:id="c05-ent-0032"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0033">8/29/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0034">7.75&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0035">1.0775</entry>
+<entry colname="col4" xml:id="c05-ent-0036"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0037">9/30/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0038">&ndash;1.71&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0039">0.9829</entry>
+<entry colname="col4" xml:id="c05-ent-0040"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0041">10/31/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0042">7.20&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0043">1.0720</entry>
+<entry colname="col4" xml:id="c05-ent-0044"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0045">11/28/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0046">10.60&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0047">1.1060</entry>
+<entry colname="col4" xml:id="c05-ent-0048"></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0049">12/31/2014</entry>
+<entry colname="col2" xml:id="c05-ent-0050">&ndash;7.19&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0051">0.9281</entry>
+<entry colname="col4" xml:id="c05-ent-0052">40.62&percnt;</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<p xml:id="c05-para-0008">Clearly, Apple had a good year in 2014! For reference, the broad market was up 13.46 percent in 2014. A similar exercise could be done over a different look&hyphen;back period, such as the past month, where the total return would be &ndash;7.19 percent (i.e., the return over the past month). Other calculations could be done over any look&hyphen;back period we wanted to examine, such as the past 3 months, 36 months, or even the past 5 years (60 months). This calculation can be completed for any stock with a price return stream.</p>
+<p xml:id="c05-para-0009">Now that we understand how to calculate generic momentum over a particular time period, we can review some key results associated with different look&hyphen;back windows.</p></section>
+<section xml:id="c05-sec-0003"><title type="main">Three Types of<?xmltex \pgtag{\protect\nobreak}?> Momentum</title><p xml:id="c05-para-0010">In this section, we examine how returns are influenced by the look&hyphen;back period we use to calculate momentum. Academic researchers have already thoroughly reviewed this topic and we summarize the main findings associated with three key look&hyphen;back windows:
+<?xmltex \pgtag{\def\itemwd{3.}}?>
+<list xml:id="c05-list-0002" style="1"><listItem xml:id="c05-li-0004">Short&hyphen;term momentum (e.g., 1&hyphen;month look&hyphen;back)</listItem>
+<listItem xml:id="c05-li-0005">Long&hyphen;term momentum (e.g., 5 years, or 60&hyphen;month look&hyphen;back)</listItem>
+<listItem xml:id="c05-li-0006">Intermediate&hyphen;term momentum (e.g., 12&hyphen;month look&hyphen;back)</listItem>
+</list>
+</p>
+<p xml:id="c05-para-0011">We deliberately end the section with intermediate&hyphen;term momentum, as this is the momentum we plan to focus on for the rest of the<?xmltex \pgtag{\nobreak}?> <?xmltex \pgtag{\hbox\bgroup}?>book.<?xmltex \pgtag{\egroup}?></p><section xml:id="c05-sec-0004"><title type="main">Short&hyphen;Term Momentum</title><p xml:id="c05-para-0012">We define short&hyphen;term momentum as any momentum score that is measured over a time period of (at most) one month. Two academic papers written in 1990 specifically examine the topic of short&hyphen;term momentum.</p>
+<p xml:id="c05-para-0013">In the first paper, Bruce Lehman investigates how stock returns using a one&hyphen;week look&hyphen;back affect the next week&apos;s returns over his sample period from 1962 to 1986. His paper, titled &ldquo;Fads, Martingales, and Market Efficiency,&rdquo;<link href="c05-note-0002"/> finds that portfolios of securities that had positive returns (winners) in the prior week typically had negative returns in the next week (&ndash;0.35&percnt; to &ndash;0.55&percnt; per week on average). Those stocks with negative returns (losers) in the prior week typically had positive returns in the next week (0.86&percnt; to 1.24&percnt; per week on average). This <i>short&hyphen;term reversal</i> in returns is difficult to reconcile with the efficient market hypothesis.</p>
+<p xml:id="c05-para-0014">A second paper, written by Narasimhan Jegadeesh, examines the returns of stocks from month to month sample period between 1934 and 1987. His paper, titled &ldquo;Evidence of Predictable Behavior of Security Returns,&rdquo;<link href="c05-note-0003"/> finds a similar reversal in returns: Last month&apos;s winners are next month&apos;s losers, and vice versa. And the effect is large and significant. The prior month&apos;s winners have an average future return (next month) return of &ndash;1.38 percent, while the prior month&apos;s losers have an average future return (next month) of 1.11 percent. This 2.49 percent spread in the two portfolios is difficult to reconcile with the efficient market hypothesis.</p>
+<p xml:id="c05-para-0015">Using data provided by Dartmouth Professor Ken French,<sup>4</sup> we examine monthly returns from January 1, 1927, to December 31, 2014, for the Short&hyphen;Term Loser portfolio (low short&hyphen;term return decile, value&hyphen;weight returns), the Short&hyphen;Term Winner portfolio (high short&hyphen;term return decile, value&hyphen;weight returns), the SP500 total return index, and the risk&hyphen;free rate of return (90&hyphen;day T&hyphen;bills). The short&hyphen;term past performance is measured over the previous month. Results are shown in Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0002"/>. All returns are total returns and include the reinvestment of distributions (e.g., dividends). Results are gross of<?xmltex \pgtag{\nobreak}?> <?xmltex \pgtag{\hbox\bgroup}?>fees.<?xmltex \pgtag{\egroup}?></p>
+<?xmltex \OrgFixedPosition{c05-tbl-0002}?>
+<?xmltex \pgtag{\bgroup\tabbotskip=-2pt\FloatPositionBottrue}?><tabular xml:id="c05-tbl-0002"><title type="main">Short&hyphen;Term Momentum Portfolio Returns (1927&ndash;2014)</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="5"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="center"/><colspec colnum="3" colname="col3" align="center"/><colspec colnum="4" colname="col4" align="center"/><colspec colnum="5" colname="col5" align="center"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}ld{4}d{4}d{4}d{4}@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" align="center" xml:id="c05-ent-0053"></entry><entry colname="col2" align="center" xml:id="c05-ent-0054" lwPstyle="TabularHead">Short&hyphen;Term<?xmltex \pgtag{\\}?> Loser</entry><entry colname="col3" align="center" xml:id="c05-ent-0055" lwPstyle="TabularHead">Short&hyphen;Term<?xmltex \pgtag{\\}?> Winner</entry><entry colname="col4" xml:id="c05-ent-0056" align="center" lwPstyle="TabularHead">SP500</entry><entry colname="col5" xml:id="c05-ent-0057" lwPstyle="TabularHead">Risk Free</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0058"><b>CAGR</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0059">13.46&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0060">3.21&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0061">9.95&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0062">3.46&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0063"><b>Standard Deviation</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0064">29.60&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0065">24.18&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0066">19.09&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0067">0.88&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0068"><b>Downside Deviation</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0069">20.36&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0070">16.83&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0071">14.22&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0072">0.48&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0073"><b>Sharpe Ratio</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0074">0.46</entry>
+<entry colname="col3"  xml:id="c05-ent-0075">0.11</entry>
+<entry colname="col4" xml:id="c05-ent-0076">0.41</entry>
+<entry colname="col5" xml:id="c05-ent-0077">0.00</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0078"><b>Sortino Ratio (MAR</b> <math display="inline" overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><mrow><mo mathvariant="bold">=</mo></mrow></math> <b>5&percnt;)</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0079">0.59</entry>
+<entry colname="col3"  xml:id="c05-ent-0080">0.06</entry>
+<entry colname="col4" xml:id="c05-ent-0081">0.45</entry>
+<entry colname="col5" xml:id="c05-ent-0082">&ndash;3.34</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0083"><b>Worst Drawdown</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0084">&ndash;81.48&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0085">&ndash;94.31&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0086">&ndash;84.59&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0087">&ndash;0.09&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0088"><b>Worst Month Return</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0089">&ndash;32.66&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0090">&ndash;31.27&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0091">&ndash;28.73&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0092">&ndash;0.06&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0093"><b>Best Month Return</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0094">55.85&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0095">63.65&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0096">41.65&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0097">1.35&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0098"><b>Profitable Months</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0099">60.13&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0100">56.06&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0101">61.74&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0102">98.01&percnt;</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<p xml:id="c05-para-0016"><?xmltex \pgtag{\looseness=-1}?>The data validates the theory: Short&hyphen;term reversals are alive and well across a long swath of history! Looking at the results in Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0002"/>, we notice the <i>reversal</i> in returns from month to month&mdash;the returns to the monthly rebalanced portfolio of stocks with the <i>worst</i> returns from last month (&ldquo;Short&hyphen;Term Loser&rdquo;) generate a CAGR of 13.46 percent from 1927 to 2014, while the returns to the monthly rebalanced portfolio of stocks with the <i>best</i> returns from last month (&ldquo;Short&hyphen;Term Winner&rdquo;) earn a measly 3.21 percent. The returns to past&hyphen;months&apos; winners are even less than the returns to the risk&hyphen;free rate of return. Figure<?xmltex \pgtag{\nobreak}?> <link href="c05-fig-0001"/> graphically depicts the outperformance of the short&hyphen;term loser portfolio relative to the short&hyphen;term winner portfolio.</p>
+<?xmltex \OrgFixedPosition{c05-fig-0001}?>
+<figure xml:id="c05-fig-0001">
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c05:c05f001" alt="image"/>
+<caption>Short&hyphen;Term Momentum Portfolio Returns</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\putfigure{1}{c05/c05f001.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c05-para-0017">But the evidence doesn&apos;t end there: In addition to these two earlier papers, more recent research investigates more complex and nuanced versions of the same idea.<link href="c05-note-0005"/> The key takeaway is the same: Short&hyphen;term winners are losers in the near&hyphen;term future, and short&hyphen;term losers are winners in the near&hyphen;term future. Overall, when measuring momentum over a short time horizon, one can expect to see a reversal in short&hyphen;term future returns.</p></section>
+<section xml:id="c05-sec-0005"><title type="main">Long&hyphen;Term Momentum</title><p xml:id="c05-para-0018">An alternative way to measure momentum is to use a look&hyphen;back period over a much longer time period and assess performance. Werner DeBondt and Richard Thaler investigate this concept in their paper titled &ldquo;Does the Stock Market Overreact?&rdquo;<link href="c05-note-0006"/> The paper examines the future returns to past long&hyphen;term winners and long&hyphen;term losers, where the winners and losers are measured using look&hyphen;back windows that range from three to five years. Their first tests run from 1933 to 1980, and they track the performance of the past winners and losers portfolios formed on a 36&hyphen;month look&hyphen;back. The results show that &ldquo;losers&rdquo; outperform &ldquo;winners&rdquo; by 24.6 percent over the next three years. This spread in performance is remarkable.</p>
+<p xml:id="c05-para-0019">A similar analysis is done when measuring winners and losers over the past five years. When examining the future returns, past losers outperform past winners by 31.9 percent over the next five years. Clearly, past losers (when using a long&hyphen;term momentum measure) outperform past winners.</p>
+<p xml:id="c05-para-0020">Leveraging the same database that we used to examine short&hyphen;term reversals, we examined the returns from January 1, 1931, to December 31, 2014, for the Long&hyphen;Term Loser portfolio (low long&hyphen;term return decile, value&hyphen;weight returns), the Long&hyphen;Term Winner portfolio (high long&hyphen;term return decile, value&hyphen;weight returns), the SP500 total return index, and the risk&hyphen;free rate of return (90 day T&hyphen;bills). The long&hyphen;term past performance is measured over the previous five years (60 months), and the start date changes from 1927 to 1931 due to the necessary data requirement of five years of individual stock returns. Results are shown in Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0003"/>. All returns are total returns and include the reinvestment of distributions (e.g., dividends). Results are gross of<?xmltex \pgtag{\nobreak}?> <?xmltex \pgtag{\hbox\bgroup}?>fees.<?xmltex \pgtag{\egroup}?></p>
+<?xmltex \OrgFixedPosition{c05-tbl-0003}?>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue}?><tabular xml:id="c05-tbl-0003"><title type="main">Long&hyphen;Term Momentum Portfolio Returns (1931&ndash;2014)</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="5"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="center"/><colspec colnum="3" colname="col3" align="center"/><colspec colnum="4" colname="col4" align="center"/><colspec colnum="5" colname="col5" align="center"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}ld{4}d{4}d{4}d{4}@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" align="center" xml:id="c05-ent-0103"></entry><entry colname="col2" align="center" xml:id="c05-ent-0104" lwPstyle="TabularHead">Long&hyphen;Term<?xmltex \pgtag{\\}?> Loser</entry><entry colname="col3" align="center" xml:id="c05-ent-0105" lwPstyle="TabularHead">Long&hyphen;Term<?xmltex \pgtag{\\}?> Winner</entry><entry colname="col4" align="center" xml:id="c05-ent-0106" lwPstyle="TabularHead">SP500</entry><entry colname="col5" align="center" xml:id="c05-ent-0107" lwPstyle="TabularHead">Risk Free</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0108"><b>CAGR</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0109">14.30&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0110">8.59&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0111">10.13&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0112">3.46&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0113"><b>Standard Deviation</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0114">30.37&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0115">21.95&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0116">18.92&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0117">0.90&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0118"><b>Downside Deviation</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0119">17.98&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0120">16.23&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0121">13.91&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0122">0.47&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0123"><b>Sharpe Ratio</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0124">0.47</entry>
+<entry colname="col3"  xml:id="c05-ent-0125">0.33</entry>
+<entry colname="col4" xml:id="c05-ent-0126">0.43</entry>
+<entry colname="col5" xml:id="c05-ent-0127">0.00</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0128"><b>Sortino Ratio (MAR</b> <math display="inline" overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><mrow><mo mathvariant="bold">=</mo></mrow></math> <b>5&percnt;)</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0129">0.70</entry>
+<entry colname="col3"  xml:id="c05-ent-0130">0.35</entry>
+<entry colname="col4" xml:id="c05-ent-0131">0.46</entry>
+<entry colname="col5" xml:id="c05-ent-0132">3.35</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0133"><b>Worst Drawdown</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0134">&ndash;71.24&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0135">&ndash;72.80&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0136">&ndash;74.48&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0137">&ndash;0.09&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0138"><b>Worst Month Return</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0139">&ndash;40.77&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0140">&ndash;34.10&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0141">&ndash;28.73&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0142">&ndash;0.06&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0143"><b>Best Month Return</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0144">91.98&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0145">30.74&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0146">41.65&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0147">1.35&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0148"><b>Profitable Months</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0149">58.04&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0150">58.83&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0151">61.71&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0152">97.92&percnt;</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<p xml:id="c05-para-0021">Looking at the results in Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0003"/>, we notice the <i>reversal</i> in long&hyphen;term returns&mdash;the returns to the monthly rebalanced portfolio of stocks with the <i>worst</i> returns over the last five years earns a CAGR of 14.30 percent from 1931 to 2014, while the returns to the monthly rebalanced portfolio of stocks with the <i>best</i> returns over the past five years earns a CAGR of 8.59 percent. Figure<?xmltex \pgtag{\nobreak}?> <link href="c05-fig-0002"/> graphically depicts the outperformance of the long&hyphen;term loser portfolio relative to the long&hyphen;term winner portfolio.</p>
+<?xmltex \OrgFixedPosition{c05-fig-0002}?>
+<figure xml:id="c05-fig-0002">
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c05:c05f002" alt="image"/>
+<caption>Long&hyphen;Term Momentum Portfolio Returns</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\putfigure{2}{c05/c05f002.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c05-para-0022">The literature and our updated results highlight that long&hyphen;term momentum, similar to short&hyphen;term momentum, leads to return reversals in the future. Why long&hyphen;term reversal occurs is puzzling, and academic researchers argue whether the cause is due to behavioral bias, additional risk, or market frictions (e.g., capital gain taxes).<link href="c05-note-0007"/> Next, we examine intermediate&hyphen;term momentum, which is the form of momentum that trends in the future and isn&apos;t reversed.</p></section>
+<section xml:id="c05-sec-0006"><title type="main">Intermediate&hyphen;Term Momentum</title><p xml:id="c05-para-0023">In order to examine intermediate&hyphen;term momentum, we form portfolios based on a 6&hyphen; to 12&hyphen;month look&hyphen;back. The results are different from both short&hyphen;term (e.g., a 1&hyphen;month look&hyphen;back) and long&hyphen;term (e.g., 60&hyphen;month look&hyphen;back) momentum, which exhibit return reversals. With intermediate&hyphen;term momentum, winners keep winning and losers keep losing. The most well&hyphen;known paper on this subject is the 1993 Narasimhan Jegadeesh and Sheridan Titman paper &ldquo;Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency.&rdquo;<link href="c05-note-0008"/> In other words, if a stock has done relatively well in the past, it will continue to do well in the future.</p>
+<p xml:id="c05-para-0024">The authors demonstrate that a <i>momentum strategy</i> (buying past &ldquo;winners&rdquo; and selling past &ldquo;losers&rdquo;) performs well for an intermediate&hyphen;term horizon (3 to 12 months). They test this effect by constructing <i>J</i>&hyphen;month/<i>K</i>&hyphen;month strategies: select stocks based on past <i>J</i> months&apos; total returns and hold the position for <i>K</i> months (<math display="inline" overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><mrow><mi>J</mi><mo>=</mo><mn>3</mn><mo>,</mo><mspace width="0.25em"/><mn>6</mn><mo>,</mo><mspace width="0.25em"/><mn>9</mn><mo>,</mo><mspace width="0.25em"/><mn>12</mn><mo>;</mo><mspace width="0.25em"/><mi>K</mi><mo>=</mo><mn>3</mn><mo>,</mo><mspace width="0.25em"/><mn>6</mn><mo>,</mo><mspace width="0.25em"/><mn>9</mn><mo>,</mo><mspace width="0.25em"/><mn>12</mn></mrow></math>).</p>
+<p xml:id="c05-para-0025">Their main finding is that there is a <i>continuation</i> in returns when using intermediate&hyphen;term momentum. The best strategy (in their paper) is selecting stocks based on past 12 months&apos; performance and holding the position for 3 months. The average monthly spread in returns between the past winners and past losers over the next 3 months is 1.31 percent, or almost 16 percent per year. However, they find that the excess returns associated with intermediate&hyphen;term momentum portfolios are not long&hyphen;lasting. For example, the momentum premium dissipates for portfolios that hold the same stocks for longer than 12 months after the initial formation date. These results suggest that momentum portfolios calculated based on intermediate&hyphen;term look&hyphen;backs and held as a long&hyphen;term buy&hyphen;and&hyphen;hold portfolio suffer a long&hyphen;term reversal, which is similar to the results we discussed earlier. Jegadeesh and Titman argue that the intermediate&hyphen;term momentum effect may occur if the market underreacts to information about the short&hyphen;term prospects (such as earning announcement) of firms, but eventually overreacts to information about the long&hyphen;term prospects.</p>
+<p xml:id="c05-para-0026">With the data that we used to examine both short&hyphen;term and long&hyphen;term reversals, we examine the returns from January 1, 1927, to December 31, 2014, for the Intermediate&hyphen;Term Winner portfolio (high intermediate&hyphen;term return decile, value&hyphen;weight returns), the Intermediate&hyphen;Term Loser portfolio (low intermediate&hyphen;term return decile, value&hyphen;weight returns), the SP500 total return index, and the risk&hyphen;free rate of return (90&hyphen;day T&hyphen;bills). The intermediate&hyphen;term past performance is measured over the previous year, ignoring last month&apos;s return. So if we are forming a portfolio to trade on<?xmltex \pgtag{\nobreak}?> the close of December 31, 2015, we would compute the total return from the<?xmltex \pgtag{\nobreak}?> close of December 31, 2014, until the close of November 30, 2015, thus ignoring December 2015 returns (due to short&hyphen;term momentum reversal). Results are shown in Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0004"/>. All returns are total returns and include the reinvestment of distributions (e.g., dividends). Results are gross of<?xmltex \pgtag{\nobreak}?> <?xmltex \pgtag{\hbox\bgroup}?>fees.<?xmltex \pgtag{\egroup}?></p>
+<?xmltex \OrgFixedPosition{c05-tbl-0004}?>
+<?xmltex \pgtag{\bgroup\tabbotskip=-3pt\FloatPositionBottrue}?><tabular xml:id="c05-tbl-0004"><title type="main">Intermediate&hyphen;Term Momentum Portfolio Returns (1927&ndash;2014)</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="5"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="center"/><colspec colnum="3" colname="col3" align="center"/><colspec colnum="4" colname="col4" align="center"/><colspec colnum="5" colname="col5" align="center"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}p{7pc}d{3.4}d{3.4}d{3.4}d{3.4}@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" align="center" xml:id="c05-ent-0153"></entry><entry colname="col2" align="center" xml:id="c05-ent-0154" lwPstyle="TabularHead">Intermediate&hyphen;Term<?xmltex \pgtag{\\}?> Winner</entry><entry colname="col3" align="center" xml:id="c05-ent-0155" lwPstyle="TabularHead">Intermediate&hyphen;Term<?xmltex \pgtag{\\}?> Loser</entry><entry colname="col4" align="center" xml:id="c05-ent-0156" lwPstyle="TabularHead">SP500</entry><entry colname="col5" align="center" xml:id="c05-ent-0157" lwPstyle="TabularHead">Risk Free</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0158"><b>CAGR</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0159">16.86&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0160">&ndash;1.48&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0161">9.95&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0162">3.46&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0163"><b>Standard Deviation</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0164">22.61&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0165">33.92&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0166">19.09&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0167">0.88&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0168"><b>Downside Deviation</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0169">16.71&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0170">21.97&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0171">14.22&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0172">0.48&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0173"><b>Sharpe Ratio</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0174">0.66</entry>
+<entry colname="col3"  xml:id="c05-ent-0175">0.02</entry>
+<entry colname="col4" xml:id="c05-ent-0176">0.41</entry>
+<entry colname="col5" xml:id="c05-ent-0177">0.00</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0178"><b>Sortino Ratio<?xmltex \pgtag{\hb}?> (MAR</b> <math display="inline" overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><mrow><mo mathvariant="bold">=</mo></mrow></math> <b>5&percnt;)</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0179">0.79</entry>
+<entry colname="col3"  xml:id="c05-ent-0180">&ndash;0.05</entry>
+<entry colname="col4" xml:id="c05-ent-0181">0.45</entry>
+<entry colname="col5" xml:id="c05-ent-0182">&ndash;3.34</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0183"><b>Worst Drawdown</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0184">&ndash;76.95&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0185">&ndash;96.95&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0186">&ndash;84.59&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0187">&ndash;0.09&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0188"><b>Worst Month Return</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0189">&ndash;28.52&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0190">&ndash;42.26&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0191">&ndash;28.73&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0192">&ndash;0.06&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0193"><b>Best Month Return</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0194">28.88&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0195">93.98&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0196">41.65&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0197">1.35&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0198"><b>Profitable Months</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0199">63.16&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0200">51.42&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0201">61.74&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0202">98.01&percnt;</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<p xml:id="c05-para-0027">The tabulated results in Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0004"/> suggest strong evidence for a <i>continuation</i> in intermediate&hyphen;term returns&mdash;the returns to the monthly&hyphen;rebalanced portfolio of stocks with the <i>best</i> returns over the last year (ignoring last month) returns a CAGR of 16.86 percent from 1927 to 2014. In contrast, the returns to the monthly rebalanced portfolio of stocks with the <i>worst</i> returns over the last year (ignoring last month) returns a CAGR of &ndash;1.48 percent. The returns to past years&apos; losers (ignoring last month) are not only less than the returns to the risk&hyphen;free rate of return, they are negative! Figure<?xmltex \pgtag{\nobreak}?> <link href="c05-fig-0003"/> graphically depicts the outperformance of the intermediate&hyphen;term loser portfolio relative to the intermediate&hyphen;term winner portfolio.</p>
+<?xmltex \OrgFixedPosition{c05-fig-0003}?>
+<figure xml:id="c05-fig-0003">
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c05:c05f003" alt="image"/>
+<caption>Intermediate&hyphen;Term Momentum Portfolio Returns</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\putfigure{3}{c05/c05f003.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c05-para-0028">Our results highlight that portfolios formed on intermediate&hyphen;term momentum exhibit a <i>continuation</i> of returns. Firms that have done well in the intermediate past will continue to do well in the future, while firms that have done poorly will continue to perform poorly. However, as we discussed earlier, this &ldquo;continuation&rdquo; effect does not work if we just buy&hyphen;and&hyphen;hold intermediate&hyphen;term momentum stocks. We must form the portfolio so that the rebalance frequency can capture the abnormal returns associated with the approach. In the next section, we examine how portfolio construction, such as rebalance frequency and portfolio size, affects intermediate&hyphen;term momentum strategies.</p></section>
+</section>
+<section xml:id="c05-sec-0007"><title type="main">Why Momentum Portfolio Construction Matters</title><p xml:id="c05-para-0029">The results in the original Jegadeesh and Titman paper highlight the importance of portfolio construction in the context of the momentum anomaly. The authors identify that the holding period, or the rebalance frequency, dramatically affects a momentum portfolio&apos;s performance. As a general rule, and putting transaction costs aside, the more frequent a portfolio is rebalanced, the better the performance. In this section, we drill down on exactly how portfolio construction affects intermediate&hyphen;term momentum. Intermediate&hyphen;term momentum is the focus of our analysis throughout the remainder of this book because this form of momentum is what researchers consider to be the most anomalous and intriguing.</p>
+<p xml:id="c05-para-0030">Let&apos;s set up the experiment to assess how portfolio construction affects performance. We examine the 500 largest firms each month from 1927 to 2014. We calculate the monthly momentum variable as the cumulative returns over the past 12 months, ignoring the past month. This specific intermediate&hyphen;term momentum calculation method is the same approach used by Ken French, the source of the data we used earlier. The last month is ignored in our intermediate term momentum calculation to account for the short&hyphen;term reversal effect previously documented. If we included the most recent month in the momentum metric we would increase the noise of the metric and decrease the benefits of the signal.</p>
+<p xml:id="c05-para-0031">Looking back to our Apple momentum example (referring back to Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0001"/>), we construct our momentum variable (excluding the most recent month) as the following:
+<displayedItem type="mathematics" numbered="no" xml:id="c05-disp-0002"><?xmltex \pgtag{\mathmlalign}?><math display="block" overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><mrow><mtable><mtr><mtd><mfenced open="(" close=")"><mn>0.8923</mn></mfenced><mfenced open="(" close=")"><mn>1.0575</mn></mfenced><mfenced open="(" close=")"><mn>1.0200</mn></mfenced><mfenced open="(" close=")"><mn>1.0994</mn></mfenced><mfenced open="(" close=")"><mn>1.0787</mn></mfenced><mfenced open="(" close=")"><mn>1.0277</mn></mfenced><mfenced open="(" close=")"><mn>1.0287</mn></mfenced><mfenced open="(" close=")"><mn>1.0775</mn></mfenced></mtd></mtr>
+<mtr><mtd><mfenced open="(" close=")"><mn>0.9829</mn></mfenced><mfenced open="(" close=")"><mn>1.0720</mn></mfenced><mfenced open="(" close=")"><mn>1.1060</mn></mfenced><mspace width="0.25em"/><mo>&ndash;</mo><mspace width="0.25em"/><mn>1</mn><mo>=</mo><mn>51.51</mn><mo>&percnt;</mo></mtd></mtr></mtable></mrow></math></displayedItem></p>
+<p xml:id="c05-para-0032">The key difference between this calculation and the one provided in Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0001"/> is that we ignore the last month&apos;s return (in this example, the December returns). It should be pointed out that including the last month&apos;s return, which is more reasonable from both an empirical and theoretical perspective, does not significantly alter the results&mdash;one could include the most recent month in all momentum calculations and generate similar results. Regardless, for the rest of the book, we focus on momentum calculations that ignore the most recent month&apos;s return when calculating intermediate&hyphen;term momentum.</p>
+<p xml:id="c05-para-0033">In the following tests, we allow the portfolio construction to vary across two dimensions. First, we examine the returns by varying the number of firms in the portfolio. We allow the portfolio size to vary from 50 to 300 stocks. Second, we examine the returns by varying the holding periods after portfolio formation. We allow the holding periods to vary from 1 month to 12 months.</p>
+<p xml:id="c05-para-0034">We select the top <i>N</i> number of firms ranked on momentum, every month. Here, the number of stocks <i>N</i> can be 50, 100, 150, 200, 250, or 300. These firms are held in the portfolio for <i>T</i> months. The holding period (number of months) <i>T</i> varies from 1 to 12.</p>
+<p xml:id="c05-para-0035">Portfolios with holding periods over 1 month are formed by creating overlapping portfolios. Overlapping portfolios can be explained with an example that uses a three&hyphen;month holding period. On December 31, 2014, we use one&hyphen;third of our capital to buy high momentum stocks. These stocks stay in the portfolio until March 31, 2015. On January 31, 2015, we use another one&hyphen;third of our capital to buy high momentum stocks. These stocks stay in the portfolio until April 30, 2015. On February 28, 2015, we use another one&hyphen;third of our capital to buy high&hyphen;momentum stocks. These stocks stay in the portfolio until May 31, 2015. This process repeats every month. So the return to the portfolio from February 28, 2015, to March 31, 2015, is the returns to the stocks in the portfolio originally formed on December 31, 2014, January 31, 2015, and February 28, 2015. Overlapping portfolios are formed to minimize seasonal effects  and other event&hyphen;driven effects. Unless otherwise stated, we use overlapping portfolios throughout the analysis in the remainder of the book for holding periods of longer than one month. And similar to the robustness of the results when we decide to include or exclude the most recent month when calculating momentum measures, the use of the fancier overlapping portfolio methodology versus a more generic standard &ldquo;buy and rebalance portfolio&rdquo; does not significantly drive results in one direction of the other.</p>
+<p xml:id="c05-para-0036">Our analysis runs from January 1, 1927, to December 31, 2014. All results are gross of fees. All returns are total returns and include the <?xmltex \pgtag{\bgroup\mbox}?>reinvestment<?xmltex \pgtag{\egroup}?> of distributions (e.g., dividends). Table<?xmltex \pgtag{\nobreak}?> <link href="c05-tbl-0005"/> provides the CAGR to the value&hyphen;weighted portfolios. By <i>value weighting,</i> we mean that each stock is given its &ldquo;weight&rdquo; in the portfolio, depending on the size of the firm. Value weighting gives more weight to larger stocks and less weight to smaller stocks. It is worth mentioning, however, that we focus our results on the largest 500 US stocks, to minimize the effects that micro&hyphen;cap stocks would have on the portfolios.</p>
+<?xmltex \OrgFixedPosition{c05-tbl-0005}?>
+<?xmltex \pgtag{\bgroup\tabbotskip=-3pt\FloatPositionBottrue}?><tabular xml:id="c05-tbl-0005"><title type="main">Momentum Portfolio Returns: Varying Holding Period and Number of Firms in the Portfolio (1927&ndash;2014)</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="8"><colspec colnum="1" colname="col1" align="center"/><colspec colnum="2" colname="col2" align="center"/><colspec colnum="3" colname="col3" align="center"/><colspec colnum="4" colname="col4" align="center"/><colspec colnum="5" colname="col5" align="center"/><colspec colnum="6" colname="col6" align="center"/><colspec colnum="7" colname="col7" align="center"/><colspec colnum="8" colname="col8" align="center"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\fontsize{8.5}{11}\selectfont\begin{tabular*}{\textwidth}{@{\extracolsep\fill}cccccccc@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" align="center" xml:id="c05-ent-0203"></entry><entry colname="col2" xml:id="c05-ent-0204" align="center" lwPstyle="TabularHead">50&hyphen;<?xmltex \pgtag{\\}?> Stock<?xmltex \pgtag{\\}?> Portfolio</entry><entry colname="col3" xml:id="c05-ent-0205" align="center" lwPstyle="TabularHead">100&hyphen;<?xmltex \pgtag{\\}?> Stock<?xmltex \pgtag{\\}?> Portfolio</entry><entry colname="col4" align="center" xml:id="c05-ent-0206" lwPstyle="TabularHead">150&hyphen;<?xmltex \pgtag{\\}?> Stock<?xmltex \pgtag{\\}?> Portfolio</entry><entry colname="col5" align="center" xml:id="c05-ent-0207" lwPstyle="TabularHead">200&hyphen;<?xmltex \pgtag{\\}?> Stock<?xmltex \pgtag{\\}?> Portfolio</entry><entry colname="col6" align="center" xml:id="c05-ent-0208" lwPstyle="TabularHead">250&hyphen;<?xmltex \pgtag{\\}?> Stock<?xmltex \pgtag{\\}?> Portfolio</entry><entry colname="col7" align="center" xml:id="c05-ent-0209" lwPstyle="TabularHead">300&hyphen;<?xmltex \pgtag{\\}?> Stock<?xmltex \pgtag{\\}?> Portfolio</entry><entry colname="col8" align="center" xml:id="c05-ent-0210" lwPstyle="TabularHead">Universe<?xmltex \pgtag{\\}?> (500 Firms)</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0211"><b>1&hyphen;month hold</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0212">17.02&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0213">14.40&percnt;</entry>
+<entry colname="col4"  xml:id="c05-ent-0214">13.55&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0215">12.69&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0216">12.07&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0217">11.50&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0218">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0219"><b>2&hyphen;month hold</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0220">16.05&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0221">14.17&percnt;</entry>
+<entry colname="col4"  xml:id="c05-ent-0222">13.23&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0223">12.59&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0224">11.98&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0225">11.43&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0226">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0227"><b>3&hyphen;month hold</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0228">15.15&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0229">13.81&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0230">12.93&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0231">12.25&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0232">11.74&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0233">11.23&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0234">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0235"><b>4&hyphen;month hold</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0236">14.54&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0237">13.53&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0238">12.78&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0239">12.11&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0240">11.63&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0241">11.21&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0242">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0243"><b>5&hyphen;month hold</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0244">14.37&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0245">13.31&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0246">12.62&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0247">12.04&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0248">11.57&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0249">11.17&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0250">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0251"><b>6&hyphen;month hold</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0252">13.93&percnt;</entry>
+<entry colname="col3"  xml:id="c05-ent-0253">13.05&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0254">12.37&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0255">11.88&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0256">11.46&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0257">11.10&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0258">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0259"><b>7&hyphen;month hold</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0260">13.68&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0261">12.80&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0262">12.11&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0263">11.66&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0264">11.33&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0265">10.99&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0266">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0267"><b>8&hyphen;month hold</b></entry>
+<entry colname="col2"  xml:id="c05-ent-0268">13.38&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0269">12.58&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0270">11.89&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0271">11.48&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0272">11.19&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0273">10.90&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0274">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0275"><b>9&hyphen;month hold</b></entry>
+<entry colname="col2" xml:id="c05-ent-0276">12.94&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0277">12.24&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0278">11.60&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0279">11.23&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0280">11.01&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0281">10.77&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0282">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0283"><b>10&hyphen;month hold</b></entry>
+<entry colname="col2" xml:id="c05-ent-0284">12.62&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0285">11.93&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0286">11.37&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0287">11.03&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0288">10.85&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0289">10.66&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0290">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0291"><b>11&hyphen;month hold</b></entry>
+<entry colname="col2" xml:id="c05-ent-0292">12.21&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0293">11.61&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0294">11.12&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0295">10.81&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0296">10.68&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0297">10.52&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0298">9.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c05-ent-0299"><b>12&hyphen;month hold</b></entry>
+<entry colname="col2" xml:id="c05-ent-0300">11.78&percnt;</entry>
+<entry colname="col3" xml:id="c05-ent-0301">11.27&percnt;</entry>
+<entry colname="col4" xml:id="c05-ent-0302">10.83&percnt;</entry>
+<entry colname="col5" xml:id="c05-ent-0303">10.58&percnt;</entry>
+<entry colname="col6" xml:id="c05-ent-0304">10.48&percnt;</entry>
+<entry colname="col7" xml:id="c05-ent-0305">10.36&percnt;</entry>
+<entry colname="col8" xml:id="c05-ent-0306">9.77&percnt;</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<p xml:id="c05-para-0037">A clear trend emerges&mdash;holding fewer stocks and rebalancing more frequently leads to higher compound annual growth rates (CAGRs). The ideal portfolio is highly concentrated (e.g., 50 stocks) and rebalanced monthly (e.g., holding period equals one month). Of course, one must consider trading costs, which have the potential to greatly affect returns. To address the question of trading costs, we can examine a concentrated momentum portfolio (e.g., 50 stocks) that is rebalanced every quarter instead of every month&mdash;so we could form a portfolio that trades 4 times a year, instead of 12 times a year (overlapping portfolios are not necessary in real&hyphen;world trading). This concentrated, but lower frequency rebalanced portfolio has a CAGR of 15.15 percent over the 1927 to 2014 time frame. The portfolio gives up a substantial amount of return, but comes with a lot less trading. Depending on transaction costs (discussed later), one could assess the trade&hyphen;off between the benefit of higher expected returns associated with the monthly rebalanced against the lower transaction costs of the quarterly rebalanced portfolio.</p>
+<p xml:id="c05-para-0038">In the absence of granular detail on trading costs, when it comes to monthly versus quarterly rebalancing, the winner is unclear. However, if we compare any of these portfolios to the gross performance of a semiannually rebalanced diversified 200&hyphen;stock portfolio, the horse race among portfolio constructs becomes more obvious. The CAGR for this low&hyphen;frequency, &ldquo;diworsified&rdquo; portfolio is only 11.88 percent. The spread between this portfolio construct and the other, more concentrated and more frequently balanced portfolios is over 3 percent a year. If a momentum strategy annually rebalances and holds heavily diluted portfolios (e.g., 300 stocks), the relative performance is even worse.</p>
+<p xml:id="c05-para-0039">If we assume the &ldquo;all&hyphen;in&rdquo; rebalance costs are 0.50 percent per rebalance for these momentum strategies, the CAGR on the 50&hyphen;stock, quarterly rebalanced portfolio would fall from 15.15 percent to 13.15 percent (four trades times 0.50 percent). Similarly, the 200&hyphen;stock, semiannually rebalanced portfolio&apos;s CAGR would fall from 11.88 percent to 10.88 percent (two trades times 0.50 percent). There is still a 2.27 percent edge to the higher concentrated, more frequently rebalanced portfolio.</p>
+<p xml:id="c05-para-0040">The implementation of transaction costs in the previous analysis is simple in nature and meant to highlight the point that rebalance frequency and portfolio concentration benefits need to be considered in the context of projected trading costs. For further discussion on this subject, there is a paper by Lesmond, Schill, and Zhou in 2004, which claims that momentum profits are illusory based on ad&hyphen;hoc assumptions regarding trading costs.<link href="c05-note-0009"/> Korajczyk and Sadka also examine the issue, but consider market impact costs. These authors estimate that momentum strategies have limited capacity, estimated at roughly &dollar;5 billion.<link href="c05-note-0010"/> However, in response to this paper and others, Andrea Frazzini, Ron Israel, and Toby Moskowitz published research that leverages over a trillion dollars of live trading data from the large institutional money manager AQR.<link href="c05-note-0011"/> Frazzini et&nbsp;al. find that momentum profits are robust to transaction costs and that the estimated transaction costs used in prior research were possibly 10 times higher than real&hyphen;world transaction costs. Following the Frazzini et&nbsp;al. transaction cost analysis is a paper in 2015 by Fisher, Shah, and Titman that uses estimated bid/ask spreads from 2000&ndash;2013 to assess the trading costs associated with momentum strategies.<link href="c05-note-0012"/> Their conclusions are that their &ldquo;estimates of trading costs &hellip; are generally much larger than those reported in Frazzini, Israel, and Moskowitz, and somewhat smaller than those described in Lesmond, Schill, and Zhou and Korajczyk and Sadka.&rdquo; In short, the debate over transaction costs is heated, but the consensus from the research seems to be that momentum exists net of transaction costs, but the scalability is limited.</p>
+<p xml:id="c05-para-0041">Clearly, there is a relationship between the number of firms, the holding period, and returns. The results are almost identical when equal&hyphen;weighting the portfolios (higher CAGRs, similar pattern). And, of course, transaction costs are always an important element to consider when implementing any active strategy. Regardless, there are two important takeaways:
+<list xml:id="c05-list-0003" style="bulleted"><listItem xml:id="c05-li-0007"><b>Rebalance frequency:</b> Holding the number of firms constant, the shorter the holding period, i.e., the more frequently the portfolio is rebalanced, the higher the CAGR.</listItem>
+<listItem xml:id="c05-li-0008"><b>Avoid diworsification:</b> Keeping the holding period constant, the fewer firms in the portfolio, the higher the CAGR.</listItem>
+</list>
+</p>
+<p xml:id="c05-para-0042">For a large, multibillion dollar asset manager, the results above are not inspiring, since the manager&apos;s scale alone prohibits them from pursuing the more effective momentum strategies, which require higher turnover. However, for this same reason, the requirement that momentum be rebalanced frequently and held in concentrated portfolios is great news when viewed through the sustainable active framework. These characteristics make arbitrage costly for large pools of capital, thus ensuring a long expected life for the higher frequency rebalanced versions of the momentum anomaly.</p></section>
+<section type="summary" xml:id="c05-sec-0008"><title type="main">Summary</title><p xml:id="c05-para-0043">This chapter details how to calculate a generic momentum metric. First, we describe the three types of momentum strategies most commonly examined: short&hyphen;term look&hyphen;back momentum, intermediate&hyphen;term look&hyphen;back momentum, and long&hyphen;term look&hyphen;back momentum. Both short&hyphen;term and long&hyphen;term momentum portfolios generate return reversals. However, portfolios formed using intermediate&hyphen;term look&hyphen;back momentum calculations generate a continuation of returns. This form of momentum is the most compelling and robust as an investment approach. Finally, we highlight that portfolio construction plays are large role in determining the effectiveness of an intermediate&hyphen;term momentum portfolio. We identify that momentum portfolios should be reasonably concentrated and require frequent rebalancing to maximize their effectiveness. In the chapters that follow, we describe ways in which the generic intermediate&hyphen;term momentum measure can be improved.</p></section>
+<?xmltex \pgtag{\tablenotecnt=6\def\itemwd{16.}}?><noteGroup xml:id="c05-ntgp-0001"><title type="main">Notes</title>
+<note xml:id="c05-note-0001">George Soros, <i>The Alchemy of Finance</i> (Hoboken, NJ: John Wiley &amp; Sons, 2003), p.<?xmltex \pgtag{\nobreak}?> 5.</note>
+<note xml:id="c05-note-0002">Bruce N. Lehmann, &ldquo;Fads, Martingales, and Market Efficiency,&rdquo; <i>The Quarterly Journal of Economics</i> 105 (1990): 1&ndash;28.</note>
+<note xml:id="c05-note-0003">Narasimhan Jegadeesh, &ldquo;Evidence of Predictable Behavior of Security Returns,&rdquo; <i>The Journal of Finance</i> 45 (1990): 881&ndash;898.</note>
+<note xml:id="c05-note-0004">mba.tuck.dartmouth.edu/pages/faculty/ken.french/data&uscore;library.html, accessed 2/22/2016.</note>
+<note xml:id="c05-note-0005">Zhi Da, Qianqui Liu, and Erst Schaumburg, &ldquo;A Closer Look at the Short&hyphen;Term Return Reversal,&rdquo; <i>Management Science</i> 60 (2014): 658&ndash;674.</note>
+<note xml:id="c05-note-0006">Werner F. M. DeBondt and Richard Thaler, &ldquo;Does the Stock Market Overreact?,&rdquo; <i>The Journal of Finance</i> 40 (1985): 193&ndash;805.</note>
+<note xml:id="c05-note-0007">Thomas George and Chuan&hyphen;Yang Hwang, &ldquo;Long&hyphen;Term Return Reversals: Overreaction or Taxes?&rdquo; <i>The Journal of Finance</i> 62 (2007): 2865&ndash;2896.</note>
+<note xml:id="c05-note-0008">Narasimhan Jegadeesh and Sheridan Titman, &ldquo;Return to Buying Winners and Selling Losers: Implications for Stock Market Efficiency,&rdquo; <i>The Journal of Finance</i> 48 (1993): 65&ndash;91.</note>
+<note xml:id="c05-note-0009">David A. Lesmond, Michael J. Schill, and Chunsheng Zhou, &ldquo;The Illusory Nature of Momentum Profits,&rdquo; <i>Journal of Financial Economics</i> 71 (2004): 349&ndash;380.</note>
+<note xml:id="c05-note-0010" resumeNumberingAt="11">Robert Korajczyk and Ronnie Sadka, &ldquo;Are Momentum Profits Robust to Trading Costs?&rdquo; <i>The Journal of Finance</i> 59 (2004): 1039&ndash;1082.</note>
+<note xml:id="c05-note-0011" resumeNumberingAt="10">Andrea Frazzini, Ronen Israel, and Tobias J. Moskowitz, &ldquo;Trading Costs of Asset Pricing Anomalies,&rdquo;working paper, 2015.</note>
+<note xml:id="c05-note-0012" resumeNumberingAt="12">Gregg Fisher, Ronnie Shah, and Sheridan Titman, &ldquo;Combining Value and Momentum,&rdquo; <i>Journal of Investment Management</i>, forthcoming.</note></noteGroup>
+</body>
+</component>

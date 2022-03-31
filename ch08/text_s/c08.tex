@@ -1,0 +1,462 @@
+%%%%% Please note that the below listed 2 lines needs to be moved to %%%%
+%%%%% a new file 'c08.tml' and the same should be compiled to get the  %%%%
+%%%%% typeset pages                                                  %%%%
+\def\xmlfile{c08.tml}
+\input xmltex
+%%%%% END  %%%%%%%%%%%%%%%%%%%%%%%%
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE component SYSTEM "file://chgnsm02/macdata/Books/ptg/Books-Documents/Approved-Documents/Guidelines/WileyML3G/WileyML_3G_v2.0/Wileyml3gv20-flat.dtd">
+<component version="2.0" xmlns:cms="http://www.wiley.com/namespaces/wiley" xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley" type="bookChapter" xml:lang="en" xml:id="w9781119237198c08">
+<?xmltex \pgtag{\IIIProofVersionInfo{c08}}?>
+<?xmltex \pgtag{\setcounter{chapter}{7}\setcounter{page}{120}}?>
+<?xmltex \pgtag{\def\Gpath{u:/books/Wiley/Pd/E-line/Reprint/Gray37198/figures/iround}
+}?>
+<header xml:id="c08-hdr-0001">
+<publicationMeta level="product">
+<publisherInfo>
+<publisherName>John Wiley &amp; Sons, Inc.</publisherName>
+<publisherLoc>Hoboken, New Jersey</publisherLoc>
+</publisherInfo>
+<isbn type="print-13">9781119237198</isbn>
+<titleGroup><title type="main" sort="QUANTITATIVE MOMENTUM">Quantitative Momentum</title></titleGroup>
+<copyright ownership="publisher">Copyright &copy; 2016 by John Wiley &amp; Sons, Inc. All rights reserved.</copyright>
+<numberingGroup>
+<numbering type="edition" number="1">1st Edition</numbering>
+</numberingGroup>
+<creators><creator xml:id="cr-0001" creatorRole="author"><personName><givenNames>Wesley R.</givenNames> <familyName>Gray</familyName></personName></creator></creators>
+<subjectInfo>
+<subject href="http://psi.wiley.com/subject/ME20">n/a</subject>
+</subjectInfo>
+</publicationMeta>
+<publicationMeta level="unit" position="90" type="chapter">
+<idGroup>
+<id type="unit" value="c08"/>
+<id type="file" value="c08"/>
+</idGroup>
+<titleGroup><title type="name">Chapter</title></titleGroup>
+<eventGroup>
+<event type="xmlCreated" agent="SPi Global" date="2016-07-13"/>
+</eventGroup>
+<numberingGroup>
+<numbering type="main">8</numbering>
+</numberingGroup>
+</publicationMeta>
+<contentMeta>
+<titleGroup><title type="main">Quantitative Momentum Beats the Market</title></titleGroup>
+</contentMeta>
+</header>
+<body sectionsNumbered="no" xml:id="c08-body-0001"><section type="opening" xml:id="c08-sec-0001"><p xml:id="c08-para-0001"><?xmltex \OrgFixedPosition{c08-blkfxd-0001}?>
+<blockFixed type="standFirst" xml:id="c08-blkfxd-0001"><p xml:id="c08-para-0002">&ldquo;&hellip; we slavishly follow the model. You do whatever it says no matter how smart or dumb you think it is.&rdquo;</p>
+<source>&ndash; Jim Simons, Renaissance Technologies<link href="c08-note-0001"/></source>
+</blockFixed></p><?xmltex \pgtag{\vspace*{-6pt}}?>
+<p xml:id="c08-para-0003"><?xmltex \pgtag{\firstlet}?>The components and knowledge required to understand the quantitative momentum system are outlined in Chapters <exlink href="urn:x-wiley:9781119237198:xml-component:w9781119237198c05"/> through <exlink href="urn:x-wiley:9781119237198:xml-component:w9781119237198c07"/>. In Chapter <exlink href="urn:x-wiley:9781119237198:xml-component:w9781119237198c05"/>, we outline the generic relative strength momentum indicator commonly used in academic research. Generic momentum is a starting point in the quantitative momentum system. We calculate the generic momentum measure as the total return (including dividends) of a stock over some particular look&hyphen;back period (e.g., the past 12 months) and skip the most recent month. We calculate this measure for all stocks in our investment universe.</p>
+<p xml:id="c08-para-0004">The next aspect of the quantitative momentum system relates to how we differentiate among generic momentum stocks. If you recall, in Chapter <exlink href="urn:x-wiley:9781119237198:xml-component:w9781119237198c06"/> we speak to the evidence on two aspects of investor behavior: (1) a preference for lottery&hyphen;like assets and (2) limited attention. We first show the evidence that stocks with large short&hyphen;term &ldquo;spikes&rdquo; in performance generally underperform. This underperformance is the result of mispricing caused by biased investors who overpay for lottery&hyphen;like stock characteristics. Next, we examine the so&hyphen;called frog&hyphen;in&hyphen;the&hyphen;pan momentum algorithm (FIP), which attempts to quantify the path of a high momentum stock. The<?xmltex \pgtag{\nb}?> calculation for the measure is described as follows:<?xmltex \pgtag{\vspace*{-2pt}}?>
+<displayedItem type="mathematics" numbered="no" xml:id="c08-disp-0001"><math display="block" overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">I</mi><mi mathvariant="normal">P</mi><mo>=</mo><mtext>sign</mtext><mfenced open="(" close=")"><mrow><mtext>Past&nbsp;return</mtext></mrow></mfenced><mo>*</mo><mfenced open="[" close="]"><mrow><mo>&percnt;</mo><mspace width="0.25em"/><mtext>negative</mtext><mo>&minus;</mo><mo>&percnt;</mo><mspace width="0.25em"/><mtext>positive</mtext></mrow></mfenced></mrow></math></displayedItem></p>
+<p xml:id="c08-para-0005"><?xmltex \pgtag{\changespaceskip{2.3}}?>The FIP measure looks at the past 252 trading days for all high&hyphen;<?xmltex \pgtag{\break}?>momentum stocks and tabulates the percentage of trading days with negative returns and the percentage of trading days that are positive. These two calculation components are subtracted from one another and multiplied by the sign of the generic momentum signal (i.e., 12&hyphen;month total return, skipping the first month). For example, say stock ABC has a generic momentum calculation of 50 percent. If 35 percent of the past 252 trading days are negative, 1 percent of trading days are flat, and 64 percent are positive, then ABC&apos;s <math display="inline" overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">I</mi><mi mathvariant="normal">P</mi><mo>=</mo><mo form="prefix">+</mo><mn>1</mn><mo>*</mo><mfenced open="[" close="]"><mrow><mn>.35</mn><mspace width="0.25em"/><mo>&ndash;</mo><mspace width="0.25em"/><mn>.64</mn></mrow></mfenced><mo>=</mo><mo>&ndash;</mo><mn>0.29</mn></mrow></math>. The more negative the FIP, the better. The FIP algorithm separates high momentum stocks into those that have more continuous price paths (i.e., smooth, with a slow diffusion of gradual information elements) versus those high momentum stocks that have more discrete price paths (i.e., jumpy, with immediate information elements). The FIP algorithm serves as a 2&hyphen;for&hyphen;1 benefit, as it systematically minimizes exposure to lottery&hyphen;like stock characteristics and focuses on those high momentum stocks that are most likely to be suffering from the core reason why momentum stocks outperform: investors are systematically underreacting to positive<?xmltex \pgtag{\nobreak}?> <?xmltex \pgtag{\hbox\bgroup}?>news.<?xmltex \pgtag{\egroup}?></p><?xmltex \pgtag{\enlargethispage{1.5pc}}?>
+<p xml:id="c08-para-0006">Finally, in Chapter <exlink href="urn:x-wiley:9781119237198:xml-component:w9781119237198c07"/>, we investigate seasonality and how it relates to momentum strategies. The core finding from this chapter is that window dressing and tax minimization incentives likely play a role in the time series dynamics of the profitability of momentum strategies. We discuss the difficulty of exploiting this seasonality evidence due to real&hyphen;world concerns related to frictional costs and trading complexity. However, we highlight that this information can be indirectly leveraged by incorporating seasonality knowledge into the rebalance program of a momentum strategy. Our research highlights that timing momentum strategy rebalances, such that the strategy trades ahead of window dressers and tax motivated investors, delivers a positive contribution to expected performance.</p>
+<p xml:id="c08-para-0007">In the end, we boiled down our momentum process into five sequential steps (depicted in Figure<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0001"/>):
+<?xmltex \pgtag{\def\itemwd{5.}}?>
+<list xml:id="c08-list-0001" style="1"><listItem xml:id="c08-li-0001"><b>Identify Investable Universe:</b> Our universe generally consists of mid&hyphen; to large&hyphen;capitalization U.S. exchange&hyphen;traded stocks.</listItem>
+<listItem xml:id="c08-li-0002"><b>Generic Momentum Screen:</b> We rank stocks within our universe based on their past 12&hyphen;month returns, ignoring the last month.</listItem>
+<listItem xml:id="c08-li-0003"><b>Momentum Quality Screen:</b> We screen high&hyphen;momentum stocks on the &ldquo;quality&rdquo; of their momentum, which we measure via the FIP algorithm.</listItem>
+<listItem xml:id="c08-li-0004"><b>Momentum Seasonality Screen:</b> We take advantage of seasonal aspects applicable to momentum investing, which determines the timing of our rebalance. We rebalance quarterly before quarter ending months.</listItem>
+<listItem xml:id="c08-li-0005"><b>Invest with Conviction:</b> We seek to invest in a concentrated portfolio of stocks with the highest quality momentum. This form of investing requires disciplined commitment, as well as a willingness to deviate from standard benchmarks.</listItem>
+</list>
+</p>
+<?xmltex \OrgFixedPosition{c08-fig-0001}?>
+<figure xml:id="c08-fig-0001">
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f001" alt="image"/>
+<caption>Quantitative Momentum Process</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\putfigure{1}{c08/c08f001.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c08-para-0008">A hypothetical portfolio construction scenario would work in the <?xmltex \pgtag{\bgroup\mbox}?>following<?xmltex \pgtag{\egroup}?> way. Consider a universe of 1,000 stocks identified in step 1. In step 2, we calculate generic momentum scores for each of the 1,000 securities and identify the top 10 percent, or 100 highest generic momentum stocks. For step 3, we calculate the FIP score for the 100 high&hyphen;momentum names identified in step 2 and rank these 100 stocks on FIP, where lower is better. We identify the top half, or 50 high&hyphen;momentum stocks with the smoothest momentum. In step 4, we determine the model portfolio and conduct our rebalance at the end of February, May, August, and November to exploit seasonality effects. Finally, in step 5, we implement the roughly 50&hyphen;stock portfolio strategy with an equal&hyphen;weight construction (to minimize stock specific risk) and prepare for high relative performance volatility and the blessing (and curse) of long periods of relative outperformance (and<?xmltex \pgtag{\break}?> underperformance).</p></section>
+<section xml:id="c08-sec-0002"><title type="main">Transaction Costs</title><p xml:id="c08-para-0009"><?xmltex \pgtag{\looseness=1}?>Transaction costs are commonly discussed as a core reason why momentum is a failed investment practice left to the hypothetical day<?xmltex \pgtag{\vadjust{\vfill\eject}}?> trading technical analysis heretics who lack brains. We covered some of the academic research on the subject of momentum profits net of transaction costs in Chapter <exlink href="urn:x-wiley:9781119237198:xml-component:w9781119237198c05"/>. And while the academic research consensus is that transaction costs matter for momentum strategies, as they do for any active investment strategy, the myth of momentum strategies as being too expensive to exploit is probably too strong. This &ldquo;myth&rdquo; is often preached by those who are (1) unfamiliar with the research on the subject and (2) have never had experience trading momentum strategies in practice. Cliff Asness et&nbsp;al. attack this issue head on in their appropriately titled paper &ldquo;Facts, Fiction, and Momentum Investing.&rdquo; Asness states succinctly that &ldquo;you don&apos;t have to do much math to realize that momentum can easily survive trading costs.&rdquo;<link href="c08-note-0002"/> We encourage interested readers to explore and compare the analysis of momentum transaction costs presented in Frazzini, Israel, and Moskowitz,<link href="c08-note-0003"/> who analyze realized transaction costs data from AQR capital over a sustained period of time, and Lesmond, Schill, and Zhou, who estimate trading costs from daily and intra&hyphen;day analysis via an academic exercise that does not consider that professional investors have much lower trading costs and implement strategies to minimize rebalance costs.<link href="c08-note-0004"/> Of course, extrapolating Asness&apos;s research too far would also be foolish. Common sense suggests that one cannot jam billions upon billions of dollars into momentum strategies without recourse. If more disciplined capital is deployed into momentum strategies over time, without a corresponding decrease in transaction costs, the net benefit to a momentum strategy may become muted.</p>
+<p xml:id="c08-para-0010">When testing the quantitative momentum algorithm, we must decide at the outset of the investment simulation how we incorporate transaction costs into our backtests. For simplicity, we incorporate a 1 percent management fee, under the assumption that most investors would need to hire a professional to implement a robust momentum strategy, and a 0.20 percent rebalancing cost. Our 0.20 rebalance cost is assessed four times per year for a quarterly rebalanced strategy, and this translates into a 0.80 percent annual trading cost. The total management fee and trading costs sum up to 1.80 percent per year, which is what we use for all the analysis we present in this chapter, unless stated otherwise.</p>
+<p xml:id="c08-para-0011">Now, before the reader suffers a knee&hyphen;jerk reaction that the fees should be much higher or much lower, consider the fact that we already know this estimate is unlikely to be the true estimate and will vary wildly. In practice, different investors will have different cost structures, tax situations, and trading and execution skills. Cost assumptions for one group of investors can be a degree of magnitude larger (or smaller) for another<?xmltex \pgtag{\vadjust{\vfill\eject}}?> set of investors. We<?xmltex \pgtag{\nb}?> are merely establishing a baseline cost estimate to take into account the fact that costs will have <i>some</i> effect on the final outcome. In our own live trading of the quantitative momentum strategy, we have experienced much lower trading costs than those assumed, but historically the trading costs would have been much higher than those assumed. We hope that our <?xmltex \pgtag{\bgroup\mbox}?>estimate<?xmltex \pgtag{\egroup}?> is a &ldquo;goldilocks&rdquo; estimate&mdash;not too cold; not too hot; and perhaps just right. We don&apos;t claim to have the perfect answers and we encourage all investors to gauge the expected costs of running these systems and adjust the results accordingly.</p>
+<?xmltex \pgtag{\bgroup\tabbotskip=1.5pc\tabtopskip=7pt\FloatPositionBottrue}?><tabular xml:id="c08-tbl-0001"><title type="main">Universe Selection Parameters</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="2"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="left"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lp{15pc}@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0001" lwPstyle="TabularHead">Item</entry><entry colname="col2" xml:id="c08-ent-0002" lwPstyle="TabularHead">Item Description</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0003">Market Capitalization</entry>
+<entry colname="col2" xml:id="c08-ent-0004">NYSE 40&percnt; Breakpoint</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0005">Exchanges</entry>
+<entry colname="col2" xml:id="c08-ent-0006">NYSE/AMEX/NASDAQ</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0007">Included Security Types</entry>
+<entry colname="col2" xml:id="c08-ent-0008">Ordinary Common Shares</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0009">Excluded Industries</entry>
+<entry colname="col2" xml:id="c08-ent-0010">None</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0011">Return Data</entry>
+<entry colname="col2" xml:id="c08-ent-0012">Prices adjusted for dividends, splits, and corporate actions</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0013">Delisting Algorithm</entry>
+<entry colname="col2" xml:id="c08-ent-0014">&ldquo;Delisting Returns and their Effect on Accounting&hyphen;Based Market Anomalies,&rdquo; by William Beaver, Maureen McNichols, and Richard Price<link href="c08-note-0006"/></entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0015">Portfolio Weights</entry>
+<entry colname="col2" xml:id="c08-ent-0016">Market&hyphen;capitalization weighted (VW, or value&hyphen;weight)</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?></section>
+<section xml:id="c08-sec-0003"><title type="main">The Parameters of<?xmltex \pgtag{\protect\nobreak}?> the Universe</title><p xml:id="c08-para-0012">To ensure other researchers have enough information to replicate and independently verify our results, we outline the details of the stock universe we explore and the assumptions we make to conduct our analysis in Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0001"/>. Our universe is liquid and investable, requiring a minimum market capitalization at each rebalance period that is greater than the NYSE 40 percent market capitalization breakpoint at the time of the rebalance. Our analysis runs from March 1, 1927, through December 31, 2014,<link href="c08-note-0005"/> and our data come from the academic research gold standard for return data: CRSP (The Center for Research in Security Prices).</p>
+<?xmltex \OrgFixedPosition{c08-tbl-0001}?></section>
+<section xml:id="c08-sec-0004"><title type="main">Quantitative Momentum Analysis</title><p xml:id="c08-para-0013">We do a deep dive into the historical performance of the quantitative momentum system. Our analysis is organized as follows:
+<list xml:id="c08-list-0002" style="bulleted"><listItem xml:id="c08-li-0006">Summary statistics</listItem>
+<listItem xml:id="c08-li-0007">Reward analysis</listItem>
+<listItem xml:id="c08-li-0008">Risk analysis</listItem>
+<listItem xml:id="c08-li-0009">Robustness analysis</listItem>
+</list>
+</p><section xml:id="c08-sec-0005"><title type="main">Summary Statistics</title><p xml:id="c08-para-0014">Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0002"/> sets out the standard statistical analyses of the quantitative momentum strategy&apos;s performance and risk profile, comparing it to the generic momentum strategy (no seasonality, no FIP), and the Standard &amp; Poor&apos;s 500 Total Return Index (S&amp;P 500 TR Index). The returns shown in Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0002"/> are net of 1.80 percent in fees for all three of the momentum strategies, and the S&amp;P 500 Index is gross of fees. We give the passive index an unrealistic cost advantage (i.e., free) to ensure we are conservative in our assessment of the results. All results are value&hyphen;weight (sometimes referred to as market&hyphen;cap weight) to maintain consistency. An alternative weighting scheme is to equal&hyphen;weight the portfolio holdings. This alternative equal&hyphen;weighting scheme is beneficial in two ways:
+<?xmltex \pgtag{\def\itemwd{2.}}?>
+<list xml:id="c08-list-0003" style="1"><listItem xml:id="c08-li-0010"><i>Diversification</i>&mdash;You allocate the same percentage of capital to each stock, so no one stock has a large weight in the portfolio.</listItem>
+<listItem xml:id="c08-li-0011"><i>Small&hyphen;cap Effect</i>&mdash;On average, the returns to smaller stocks has been larger in the past, and for our portfolio, this means higher expected returns.</listItem>
+</list>
+</p>
+<?xmltex \OrgFixedPosition{c08-tbl-0002}?>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue}?><tabular xml:id="c08-tbl-0002"><title type="main">VW Quantitative Momentum Performance (1927&ndash;2014)</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="4"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="center"/><colspec colnum="3" colname="col3" align="center"/><colspec colnum="4" colname="col4" align="center"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}ld{8}d{5}d{5}@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" align="center" xml:id="c08-ent-0017"></entry><entry colname="col2" xml:id="c08-ent-0018" align="center" lwPstyle="TabularHead">Quantitative<?xmltex \pgtag{\\}?> Momentum (Net)</entry><entry colname="col3" xml:id="c08-ent-0019" align="center" lwPstyle="TabularHead">Generic<?xmltex \pgtag{\\}?> Momentum<?xmltex \pgtag{\\}?> (Net)</entry><entry colname="col4" xml:id="c08-ent-0020" align="center" lwPstyle="TabularHead">S&amp;P 500<?xmltex \pgtag{\\}?> Index</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0021"><b>CAGR</b></entry>
+<entry colname="col2" xml:id="c08-ent-0022">15.80&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0023">13.45&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0024">9.92&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0025"><b>Standard Deviation</b></entry>
+<entry colname="col2" xml:id="c08-ent-0026">23.89&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0027">23.62&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0028">19.11&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0029"><b>Downside Deviation</b></entry>
+<entry colname="col2" xml:id="c08-ent-0030">17.56&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0031">17.44&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0032">14.22&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0033"><b>Sharpe Ratio</b></entry>
+<entry colname="col2" xml:id="c08-ent-0034">0.60</entry>
+<entry colname="col3" xml:id="c08-ent-0035">0.51</entry>
+<entry colname="col4" xml:id="c08-ent-0036">0.41</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0037"><b>Sortino Ratio (MAR</b> <math display="inline" overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><mrow><mo mathvariant="bold">=</mo></mrow></math> <b>5&percnt;)</b></entry>
+<entry colname="col2" xml:id="c08-ent-0038">0.72</entry>
+<entry colname="col3" xml:id="c08-ent-0039">0.60</entry>
+<entry colname="col4" xml:id="c08-ent-0040">0.44</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0041"><b>Worst Drawdown</b></entry>
+<entry colname="col2" xml:id="c08-ent-0042">&ndash;76.97&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0043">&ndash;75.81&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0044">&ndash;84.59&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0045"><b>Worst Month Return</b></entry>
+<entry colname="col2" xml:id="c08-ent-0046">&ndash;31.91&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0047">&ndash;30.15&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0048">&ndash;28.73&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0049"><b>Best Month Return</b></entry>
+<entry colname="col2" xml:id="c08-ent-0050">31.70&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0051">33.73&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0052">41.65&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0053"><b>Profitable Months</b></entry>
+<entry colname="col2" xml:id="c08-ent-0054">63.00&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0055">61.39&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0056">61.76&percnt;</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<p xml:id="c08-para-0019">Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0002"/> shows that the quantitative momentum strategy generated a compound annual growth rate (CAGR) of 15.80 percent, significantly outperforming the generic momentum performance of 13.45 percent. The Quantitative Momentum strategy also outperformed the S&amp;P 500, which returned 9.92 percent.</p>
+<p xml:id="c08-para-0020">The quantitative momentum portfolio achieved this return with a much higher volatility than the benchmark portfolio, which is to be expected because the portfolio is more concentrated than the passive benchmark (i.e., averages 43.9 stocks over the time period) and<?xmltex \pgtag{\vadjust{\vfill\eject}}?> the strategy is designed to be difficult to follow. Quantitative momentum had a standard deviation of 23.89 percent against the passive S&amp;P 500 benchmark volatility measure of 19.11 percent. Despite the enhanced volatility, the risk&hyphen;adjusted parameters are still favorable for the quantitative momentum strategy. The strategy has a Sharpe ratio of 0.60, considerably better than the S&amp;P 500 Sharpe ratio of 0.41. The strategy also has a higher downside volatility, with downside deviation at 17.56 percent to the benchmark&apos;s 14.22 percent. However, the higher returns compensate for the higher downside volatility, leading to an exceptional Sortino ratio of 0.72 for the quantitative momentum strategy, against 0.44 for the benchmark.</p>
+<p xml:id="c08-para-0021">If we look at the worst drawdowns, which represent the worst possible peak&hyphen;to&hyphen;trough returns associated with the various strategies, the quantitative momentum strategy showcases that the strategy can be extraordinarily painful! The worst drawdown suffered by the quantitative momentum portfolio is &ndash;76.97 percent, which is the Great Depression drawdown (the benchmark drawdown was an even worse &ndash;84.59 percent).</p>
+<p xml:id="c08-para-0022">We must emphatically emphasize that investors need to be prepared for the enhanced volatility and drawdown risks associated with momentum strategies&mdash;that is a primary reason why this system is expected to work in the future&mdash;but this enhanced risk is more than offset by additional expected returns, which is what makes momentum anomalous.</p></section>
+<section xml:id="c08-sec-0006"><title type="main">Rewards Analysis</title><p xml:id="c08-para-0023">Consider Figure<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0002"/>, which shows the cumulative performance of the quantitative momentum portfolio compared to the other strategies.</p>
+<?xmltex \pgtag{\vfill\eject}?>
+<?xmltex \OrgFixedPosition{c08-fig-0002}?>
+<figure xml:id="c08-fig-0002">
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f002" alt="image"/>
+<caption>Cumulative Value for Quantitative Momentum (1927&ndash;2014)</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\figbotskip=12pt\putfigure{2}{c08/c08f002.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c08-para-0024">Figure<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0002"/> illustrates the effects of compounding an edge over a long period of time. The quantitative momentum portfolio&apos;s small advantage leads to a jaw&hyphen;dropping spread relative to the passive benchmark.</p>
+<p xml:id="c08-para-0025">Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0003"/> shows the compound annual growth rates (CAGR) of the quantitative momentum portfolio and the competition over different decades. The intent of this test is to examine the robustness of performance across<?xmltex \pgtag{\nobreak}?> <?xmltex \pgtag{\hbox\bgroup}?>time.<?xmltex \pgtag{\egroup}?></p>
+<?xmltex \OrgFixedPosition{c08-tbl-0003}?>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue}?><tabular xml:id="c08-tbl-0003"><title type="main">CAGR Across Different Decades</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="4"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="center"/><colspec colnum="3" colname="col3" align="center"/><colspec colnum="4" colname="col4" align="center"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}ld{8}d{8}d{4}@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" align="center" xml:id="c08-ent-0057"></entry><entry colname="col2" align="center" xml:id="c08-ent-0058" lwPstyle="TabularHead">Quantitative<?xmltex \pgtag{\\}?> Momentum (Net)</entry><entry colname="col3" align="center" xml:id="c08-ent-0059" lwPstyle="TabularHead">Generic<?xmltex \pgtag{\\}?> Momentum (Net)</entry><entry colname="col4" align="center" xml:id="c08-ent-0060" lwPstyle="TabularHead">S&amp;P 500<?xmltex \pgtag{\\}?> Index</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0061"><b>1930&ndash;1939</b></entry>
+<entry colname="col2" xml:id="c08-ent-0062">3.08&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0063">1.64&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0064">&ndash;1.34&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0065"><b>1940&ndash;1949</b></entry>
+<entry colname="col2" xml:id="c08-ent-0066">11.01&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0067">11.85&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0068">9.15&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0069"><b>1950&ndash;1959</b></entry>
+<entry colname="col2" xml:id="c08-ent-0070">24.98&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0071">21.31&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0072">19.42&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0073"><b>1960&ndash;1969</b></entry>
+<entry colname="col2" xml:id="c08-ent-0074">20.50&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0075">18.26&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0076">7.84&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0077"><b>1970&ndash;1979</b></entry>
+<entry colname="col2" xml:id="c08-ent-0078">13.93&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0079">13.21&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0080">5.83&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0081"><b>1980&ndash;1989</b></entry>
+<entry colname="col2" xml:id="c08-ent-0082">24.48&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0083">17.38&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0084">17.61&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0085"><b>1990&ndash;1999</b></entry>
+<entry colname="col2" xml:id="c08-ent-0086">36.48&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0087">30.21&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0088">18.37&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0089"><b>2000&ndash;2009</b></entry>
+<entry colname="col2" xml:id="c08-ent-0090">&ndash;3.58&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0091">&ndash;4.88&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0092">&ndash;0.68&percnt;</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<?xmltex \pgtag{\vfill\eject}?>
+<p xml:id="c08-para-0028">Over eight full decades, the quantitative momentum portfolio <?xmltex \pgtag{\bgroup\mbox}?>outperformed<?xmltex \pgtag{\egroup}?> in seven of the eight. A concern some may have is that the quantitative momentum portfolio lost in the most recent decade. Perhaps momentum is dead because the smart arbitrageurs eliminated the momentum premium? We can never eliminate this possibility; however, a decade of underperformance is not unexpected. Geczy and Samonov find that long periods of poor relative performance occur on multiple occasions in out&hyphen;of&hyphen;sample testing over the 1801 to 1926 time period.<link href="c08-note-0007"/> Moreover, as we explained earlier in the book, sticking to the algorithm is difficult because of the high volatility and career risk. Second, if one examines the net of fee results of the equal&hyphen;weighted quantitative momentum portfolio (not shown), this portfolio actually outperformed on a CAGR basis over the 2000&ndash;2009 decade. Nonetheless, no sustainable system can work all the time. And while Figure<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0002"/> makes quantitative momentum seem like a &ldquo;no&hyphen;brainer,&rdquo; a deeper dive into shorter windows highlights the fact that there are periods of <i>extreme</i> relative underperformance over the 1927 to 2014 period. Momentum investing is simple, but not<?xmltex \pgtag{\nobreak}?> <?xmltex \pgtag{\hbox\bgroup}?>easy.<?xmltex \pgtag{\egroup}?></p>
+<p xml:id="c08-para-0029">Here we look at a variety of measures to assess the performance across rolling periods. Figures<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0003"/> and <link href="c08-fig-0004"/> show the rolling 5&hyphen; and 10&hyphen;year CAGRs for the strategy. These figures show the relevant holding period return at different points in time. A robust strategy will show consistent outperformance regardless of timing; a &ldquo;lucky&rdquo; strategy may have extreme outperformance in one time period but flounder in others.</p>
+<?xmltex \OrgFixedPosition{c08-fig-0003}?>
+<figure xml:id="c08-fig-0003"><label>8.3a</label>
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f003" alt="image"/>
+<caption>Five&hyphen;Year Rolling CAGR for Quantitative Momentum</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\putfigure{3}{c08/c08f003a.eps}{}{}{}\egroup}?></figure>
+<?xmltex \OrgFixedPosition{c08-fig-0004}?>
+<figure xml:id="c08-fig-0004"><label>8.3b</label>
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f004" alt="image"/>
+<caption>Ten&hyphen;Year Rolling CAGR for Quantitative Momentum</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\putfigure{4}{c08/c08f003b.eps}{}{}{}\egroup}?></figure>
+
+<p xml:id="c08-para-0030">Figures<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0003"/> and <link href="c08-fig-0004"/> illustrate how consistently the strategy beats the Generic momentum portfolio and the S&amp;P 500 on rolling 5&hyphen; and 10&hyphen;year bases. Only rarely, and for brief periods, was it better to have been invested in the others. Two periods of long&hyphen;term underperformance include the Great Depression period and the most recent period following the 2008 financial crisis. This underperformance is to be expected, and appreciated, because these periods &ldquo;shake out&rdquo; weak hands. Over the long haul, a sustainable process executed with discipline wins out.</p></section>
+<section xml:id="c08-sec-0007"><title type="main">Risk Analysis</title><p xml:id="c08-para-0031">As the previous analysis emphasizes, the power of momentum is an ability to generate outsize returns that dwarf returns associated with passive benchmarks. Unfortunately, outsized expected returns deliver enhanced risks. The risk and reward trade&hyphen;off for momentum is still favorable, but not acknowledging the increased risk would be intellectually dishonest and set up a prospective momentum investor with the improper expectations. We examine the risks associated with quantitative momentum in the analysis<?xmltex \pgtag{\break}?> that<?xmltex \pgtag{\nb}?> follows.</p>
+<p xml:id="c08-para-0032">Our risk analysis focuses on maximum drawdowns. The maximum drawdown is defined as the maximum peak to trough loss associated with a time series. Maximum drawdown captures the worst possible performance scenario experienced by a buy and hold investor dedicated to a specific strategy. The intuition behind maximum drawdown is simple: How much can I lose?</p>
+<p xml:id="c08-para-0033">Figure<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0005"/> shows the summary drawdown performance of quantitative momentum across commonly assessed horizons of one month, one year, and three years.</p>
+<?xmltex \OrgFixedPosition{c08-fig-0005}?>
+<figure xml:id="c08-fig-0005" resumeNumberingAt="4">
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f005" alt="image"/>
+<caption>Summary Drawdown Analysis</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionBottrue\setcounter{figure}{3}\putfigure{5}{c08/c08f004.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c08-para-0034">The quantitative momentum strategy protects capital nearly as well as the competition based on the results in Figure<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0005"/>. The strategy&apos;s single&hyphen;worst drawdown was worse than the generic momentum strategy, but beat the S&amp;P 500. However, quantitative momentum did lose over rolling 1&hyphen; and 12&hyphen;month periods to the competition. The worst&hyphen;case scenario for the strategy over a 3&hyphen;year period was again slightly better than the S&amp;P 500. To be clear&mdash;our portfolio is a long&hyphen;only strategy, so it is expected to have similar drawdowns when compared to the market.</p>
+<p xml:id="c08-para-0035">Figures<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0006"/> and <link href="c08-fig-0007"/> show the rolling 5&hyphen; and 10&hyphen;year maximum drawdowns for the strategy. These figures help researchers identify the frequency and intensity of a strategy&apos;s maximum drawdowns over a designated time horizon (e.g., 5 years or 10 years). But why are rolling drawdowns a useful analytical tool? Consider two strategies with similar worst drawdowns. If one strategy experiences big drawdowns several times through history, while the other experiences big drawdowns only once, this analysis helps us identify this higher frequency of large drawdowns.</p>
+<?xmltex \OrgFixedPosition{c08-fig-0006}?>
+<figure xml:id="c08-fig-0006"><label>8.5a</label>
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f006" alt="image"/>
+<caption>Five&hyphen;Year Rolling Max Drawdown for Quantitative Momentum</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\putfigure{6}{c08/c08f005a.eps}{}{}{}\egroup}?></figure>
+<?xmltex \OrgFixedPosition{c08-fig-0007}?>
+<figure xml:id="c08-fig-0007"><label>8.5b</label>
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f007" alt="image"/>
+<caption>Ten&hyphen;Year Rolling Max Drawdown for Quantitative Momentum</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\putfigure{7}{c08/c08f005b.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c08-para-0036">The rolling drawdown analysis shows that the strategy suffers drawdowns that can be larger than the competition. For example, in the aftermath of the Internet bubble, quantitative momentum took it on the chin, especially compared to the broad index. Similarly, in the 2008 financial crisis, the quantitative momentum portfolio was hit a bit harder than the<?xmltex \pgtag{\break}?> broad<?xmltex \pgtag{\nb}?> index.</p>
+<p xml:id="c08-para-0037"><?xmltex \pgtag{\looseness=-1}?>Finally, we end our analysis with an assessment of the relative performance of quantitative momentum during the strategy&apos;s worst 10 drawdowns. We compare the quantitative momentum drawdowns to the performance of the passive index over the same time period. This analysis gives us insight into the tail&hyphen;risk correlations between the quantitative momentum strategy and the passive market. Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0004"/> highlights two points: First, quantitative momentum is a long&hyphen;only equity strategy with huge drawdowns. Second, the drawdowns are correlated with general market drawdowns. Overall, the quantitative momentum portfolio will have large drawdowns and periods of underperformance, and one should expect this at<?xmltex \pgtag{\break}?> the outset.</p>
+<?xmltex \OrgFixedPosition{c08-tbl-0004}?>
+<?xmltex \pgtag{\bgroup\tabbotskip=-3pt\FloatPositionBottrue}?><tabular xml:id="c08-tbl-0004"><title type="main">Top 10 Drawdown Analysis</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="5"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="left"/><colspec colnum="3" colname="col3" align="left"/><colspec colnum="4" colname="col4" align="left"/><colspec colnum="5" colname="col5" align="left"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcccc@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0093" lwPstyle="TabularHead">Rank</entry><entry colname="col2" xml:id="c08-ent-0094" lwPstyle="TabularHead">Date Start</entry><entry colname="col3" xml:id="c08-ent-0095" lwPstyle="TabularHead">Date End</entry><entry colname="col4" xml:id="c08-ent-0096" lwPstyle="TabularHead">Quantitative Momentum</entry><entry colname="col5" xml:id="c08-ent-0097" lwPstyle="TabularHead"><p xml:id="c08-para-0038">S&amp;P 500</p><?xmltex \pgtag{\tablepara}?><p xml:id="c08-para-0039">TR Index</p></entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0098">1</entry>
+<entry colname="col2" xml:id="c08-ent-0099">1/31/1929</entry>
+<entry colname="col3" xml:id="c08-ent-0100">5/31/1932</entry>
+<entry colname="col4" xml:id="c08-ent-0101">&ndash;76.97&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0102">&ndash;80.67&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0103">2</entry>
+<entry colname="col2" xml:id="c08-ent-0104">2/29/2000</entry>
+<entry colname="col3" xml:id="c08-ent-0105">2/28/2003</entry>
+<entry colname="col4" xml:id="c08-ent-0106">&ndash;68.14&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0107">&ndash;35.14&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0108">3</entry>
+<entry colname="col2" xml:id="c08-ent-0109">6/30/2008</entry>
+<entry colname="col3" xml:id="c08-ent-0110">2/28/2009</entry>
+<entry colname="col4" xml:id="c08-ent-0111">&ndash;62.12&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0112">&ndash;40.82&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0113">4</entry>
+<entry colname="col2" xml:id="c08-ent-0114">3/31/1937</entry>
+<entry colname="col3" xml:id="c08-ent-0115">3/31/1938</entry>
+<entry colname="col4" xml:id="c08-ent-0116">&ndash;52.99&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0117">&ndash;51.11&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0118">5</entry>
+<entry colname="col2" xml:id="c08-ent-0119">12/31/1972</entry>
+<entry colname="col3" xml:id="c08-ent-0120">9/30/1974</entry>
+<entry colname="col4" xml:id="c08-ent-0121">&ndash;38.68&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0122">&ndash;42.73&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0123">6</entry>
+<entry colname="col2" xml:id="c08-ent-0124">11/30/1961</entry>
+<entry colname="col3" xml:id="c08-ent-0125">6/30/1962</entry>
+<entry colname="col4" xml:id="c08-ent-0126">&ndash;34.57&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0127">&ndash;21.97&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0128">7</entry>
+<entry colname="col2" xml:id="c08-ent-0129">5/31/1946</entry>
+<entry colname="col3" xml:id="c08-ent-0130">6/30/1949</entry>
+<entry colname="col4" xml:id="c08-ent-0131">&ndash;31.69&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0132">&ndash;13.77&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0133">8</entry>
+<entry colname="col2" xml:id="c08-ent-0134">9/30/1987</entry>
+<entry colname="col3" xml:id="c08-ent-0135">11/30/1987</entry>
+<entry colname="col4" xml:id="c08-ent-0136">&ndash;30.88&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0137">&ndash;28.00&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0138">9</entry>
+<entry colname="col2" xml:id="c08-ent-0139">4/30/1940</entry>
+<entry colname="col3" xml:id="c08-ent-0140">4/30/1942</entry>
+<entry colname="col4" xml:id="c08-ent-0141">&ndash;30.81&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0142">&ndash;26.52&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0143">10</entry>
+<entry colname="col2" xml:id="c08-ent-0144">11/30/1968</entry>
+<entry colname="col3" xml:id="c08-ent-0145">6/30/1970</entry>
+<entry colname="col4" xml:id="c08-ent-0146">&ndash;27.23&percnt;</entry>
+<entry colname="col5" xml:id="c08-ent-0147">&ndash;29.23&percnt;</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?></section>
+<section xml:id="c08-sec-0008"><title type="main">Robustness Analysis</title><p xml:id="c08-para-0040">In this section, we examine a variety of tests that look at a strategy from different angles so that we can gain insight into the big picture and ascertain that the summary statistics reflect a broad reality that is not driven by extreme outliers.</p>
+<p xml:id="c08-para-0041">We first analyze market cycle performance of the quantitative momentum strategy compared to the other strategies over a variety of bull and bear markets since 1927. Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0005"/> shows the dates used to calculate market cycle returns.</p>
+<?xmltex \OrgFixedPosition{c08-tbl-0005}?>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue}?><tabular xml:id="c08-tbl-0005"><title type="main">Market Cycle Definitions</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="3"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="center"/><colspec colnum="3" colname="col3" align="center"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcc@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" align="center" xml:id="c08-ent-0148"></entry><entry colname="col2" xml:id="c08-ent-0149" lwPstyle="TabularHead">Month Begin</entry><entry colname="col3" xml:id="c08-ent-0150" lwPstyle="TabularHead">Month End</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0151"><b>Bear</b></entry>
+<entry colname="col2" xml:id="c08-ent-0152">September&hyphen;29</entry>
+<entry colname="col3" xml:id="c08-ent-0153">July&hyphen;32</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0154"><b>Bull</b></entry>
+<entry colname="col2" xml:id="c08-ent-0155">June&hyphen;62</entry>
+<entry colname="col3" xml:id="c08-ent-0156">February&hyphen;66</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0157"><b>Bear</b></entry>
+<entry colname="col2" xml:id="c08-ent-0158">November&hyphen;68</entry>
+<entry colname="col3" xml:id="c08-ent-0159">May&hyphen;70</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0160"><b>Bull</b></entry>
+<entry colname="col2" xml:id="c08-ent-0161">May&hyphen;70</entry>
+<entry colname="col3" xml:id="c08-ent-0162">December&hyphen;72</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0163"><b>Bear</b></entry>
+<entry colname="col2" xml:id="c08-ent-0164">January&hyphen;73</entry>
+<entry colname="col3" xml:id="c08-ent-0165">September&hyphen;74</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0166"><b>Bull</b></entry>
+<entry colname="col2" xml:id="c08-ent-0167">June&hyphen;82</entry>
+<entry colname="col3" xml:id="c08-ent-0168">December&hyphen;84</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0169"><b>Bear</b></entry>
+<entry colname="col2" xml:id="c08-ent-0170">July&hyphen;87</entry>
+<entry colname="col3" xml:id="c08-ent-0171">December&hyphen;87</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0172"><b>Bull</b></entry>
+<entry colname="col2" xml:id="c08-ent-0173">December&hyphen;87</entry>
+<entry colname="col3" xml:id="c08-ent-0174">June&hyphen;90</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0175"><b>Bear</b></entry>
+<entry colname="col2" xml:id="c08-ent-0176">March&hyphen;00</entry>
+<entry colname="col3" xml:id="c08-ent-0177">September&hyphen;01</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0178"><b>Bull</b></entry>
+<entry colname="col2" xml:id="c08-ent-0179">October&hyphen;01</entry>
+<entry colname="col3" xml:id="c08-ent-0180">July&hyphen;07</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0181"><b>Bear</b></entry>
+<entry colname="col2" xml:id="c08-ent-0182">August&hyphen;08</entry>
+<entry colname="col3" xml:id="c08-ent-0183">February&hyphen;09</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0184"><b>Bull</b></entry>
+<entry colname="col2" xml:id="c08-ent-0185">March&hyphen;09</entry>
+<entry colname="col3" xml:id="c08-ent-0186">December&hyphen;14</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<p xml:id="c08-para-0042">Figure<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0008"/> demonstrates that, on average, the strategy performed similar to the S&amp;P 500 in bear markets and outperformed the S&amp;P 500 in bull markets. Again, relative losses to the S&amp;P 500 appear in the most recent bear and bull markets. There are surely commentators that claim &ldquo;momentum is dead.&rdquo; Great, we hope this commentary continues. While the strategy may occasionally struggle for short&mdash;or even long&mdash;periods of time, momentum systems provide a high chance of expected outperformance through a full market cycle.</p>
+<?xmltex \OrgFixedPosition{c08-fig-0008}?>
+<figure xml:id="c08-fig-0008" resumeNumberingAt="6">
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f008" alt="image"/>
+<caption>Market Cycle Performance for Quantitative Momentum</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\setcounter{figure}{5}\putfigure{8}{c08/c08f006.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c08-para-0043"><?xmltex \pgtag{\looseness=-1}?>Figure<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0009"/> shows the relative performances during recent short&hyphen;term stress events of the quantitative momentum strategy and the other strategies. This analysis examines how a strategy tends to perform through <?xmltex \pgtag{\bgroup\mbox}?>extraordinary<?xmltex \pgtag{\egroup}?> short&hyphen;term market events. The model shows strong performance compared to the other S&amp;P 500 during the NASDAQ run&hyphen;up, but underperformance in the NASDAQ crash in 1998 and the 2008 financial<?xmltex \pgtag{\nb}?> crisis.</p>
+<?xmltex \OrgFixedPosition{c08-fig-0009}?>
+<figure xml:id="c08-fig-0009">
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f009" alt="image"/>
+<caption>Short&hyphen;Term Stress Event Tests for Quantitative Momentum</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue\putfigure{9}{c08/c08f007.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c08-para-0044">Figures<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0010"/> and <link href="c08-fig-0011"/> show the rolling 5&hyphen; and 10&hyphen;year alpha for the strategy. Alpha analysis is typically found in quantitative research articles published in academic journals. The procedures researchers use to estimate alpha can be complicated, but the idea is simple: How much average excess return does a strategy create after controlling for a variety of risk factors?</p>
+<?xmltex \OrgFixedPosition{c08-fig-0010}?>
+<figure xml:id="c08-fig-0010"><label>8.8a</label>
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f010" alt="image"/>
+<caption>Five&hyphen;Year Rolling Alpha for Quantitative Momentum</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionPagetrue\putfigure{10}{c08/c08f008a.eps}{}{}{}\egroup}?></figure>
+<?xmltex \OrgFixedPosition{c08-fig-0011}?>
+<figure xml:id="c08-fig-0011"><label>8.8b</label>
+<mediaResource href="urn:x-wiley:9781119237198:media:w9781119237198c08:c08f011" alt="image"/>
+<caption>Ten&hyphen;Year Rolling Alpha for Quantitative Momentum</caption>
+<?xmltex \pgtag{\bgroup\FloatPositionPagetrue\putfigure{11}{c08/c08f008b.eps}{}{}{}\egroup}?></figure>
+<p xml:id="c08-para-0045">To assess robustness, we estimate alpha using several different asset&hyphen;pricing models. We control for general market risk using the capital asset pricing model;<link href="c08-note-0008"/> we adjust for market, size, and value exposures with the Fama and French three&hyphen;factor model,<link href="c08-note-0009"/> and we account for momentum using the four&hyphen;factor model.<link href="c08-note-0010"/><sup>,</sup><link href="c08-note-0011"/> All of these factors can be found at Ken French&apos;s website.<link href="c08-note-0012"/></p>
+<p xml:id="c08-para-0046">Figures<?xmltex \pgtag{\nobreak}?> <link href="c08-fig-0010"/> and <link href="c08-fig-0011"/> confirm that the quantitative momentum strategy generates relatively consistent alpha estimates on a rolling 5&hyphen; and 10&hyphen;year basis, regardless of the asset pricing model we choose. Not surprisingly, the four&hyphen;factor alpha is the smallest, as this model controls for exposure to generic momentum. On a rolling 5&hyphen;year basis there are only a few instances where the strategy&apos;s performance does not add value after controlling for<?xmltex \pgtag{\nb}?> risk. The 10&hyphen;year rolling chart tells the story vividly: Over the long&hyphen;term, quantitative momentum has generally added value for investor portfolios.</p>
+<p xml:id="c08-para-0047">In this section, we calculate the formal beta estimates and alpha estimates associated with our kitchen sink of asset pricing models. Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0006"/> shows the full sample coefficient estimates for the four asset&hyphen;pricing models. MKT&hyphen;RF represents the excess return on the market&hyphen;weight returns of all New York Stock Exchange (NYSE)/American Stock Exchange (AMEX)/NASDAQ stocks. SMB is a long/short factor portfolio that captures exposures to small capitalization stocks. HML is a long/short factor portfolio that controls for exposure to high book value&hyphen;to&hyphen;market capitalization stocks. MOM is a long/short factor portfolio that controls for exposure to stocks that have had great performance over the recent<?xmltex \pgtag{\nobreak}?> <?xmltex \pgtag{\hbox\bgroup}?>year.<?xmltex \pgtag{\egroup}?></p>
+<?xmltex \OrgFixedPosition{c08-tbl-0006}?>
+<?xmltex \pgtag{\bgroup\FloatPositionToptrue}?><tabular xml:id="c08-tbl-0006"><title type="main">Asset Pricing Coefficient Estimates for Quantitative Momentum</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="6"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="left"/><colspec colnum="3" colname="col3" align="left"/><colspec colnum="4" colname="col4" align="left"/><colspec colnum="5" colname="col5" align="left"/><colspec colnum="6" colname="col6" align="left"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccccc@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0187"></entry><entry colname="col2" align="center" xml:id="c08-ent-0188" lwPstyle="TabularHead">Annual Alpha</entry><entry colname="col3" align="center" xml:id="c08-ent-0189" lwPstyle="TabularHead">MKT&hyphen;RF</entry><entry colname="col4" align="center" xml:id="c08-ent-0190" lwPstyle="TabularHead">SMB</entry><entry colname="col5" align="center" xml:id="c08-ent-0191" lwPstyle="TabularHead">HML</entry><entry colname="col6" align="center" xml:id="c08-ent-0192" lwPstyle="TabularHead">MOM</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0193"><b>CAPM</b></entry>
+<entry colname="col2" xml:id="c08-ent-0194"><b>6.30&percnt;</b></entry>
+<entry colname="col3" xml:id="c08-ent-0195"><b>1.02</b></entry>
+<entry colname="col4" xml:id="c08-ent-0196">&mdash;</entry>
+<entry colname="col5" xml:id="c08-ent-0197">&mdash;</entry>
+<entry colname="col6" xml:id="c08-ent-0198">&mdash;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0199"><b>Three&hyphen;Factor</b></entry>
+<entry colname="col2" xml:id="c08-ent-0200"><b>7.44&percnt;</b></entry>
+<entry colname="col3" xml:id="c08-ent-0201"><b>1.05</b></entry>
+<entry colname="col4" xml:id="c08-ent-0202"><b>0.17</b></entry>
+<entry colname="col5" xml:id="c08-ent-0203">&ndash;<b>0.41</b></entry>
+<entry colname="col6" xml:id="c08-ent-0204">&mdash;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0205"><b>Four&hyphen;Factor</b></entry>
+<entry colname="col2" xml:id="c08-ent-0206">0.85&percnt;</entry>
+<entry colname="col3" xml:id="c08-ent-0207"><b>1.17</b></entry>
+<entry colname="col4" xml:id="c08-ent-0208"><b>0.21</b></entry>
+<entry colname="col5" xml:id="c08-ent-0209">&ndash;<b>0.16</b></entry>
+<entry colname="col6" xml:id="c08-ent-0210"><b>0.55</b></entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<p xml:id="c08-para-0048">The results are tabulated in Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0006"/> and coefficient estimates that are significant at the 5 percent confidence level (two&hyphen;tailed tests) are bolded.</p>
+<p xml:id="c08-para-0049">Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0006"/> suggests that quantitative momentum generates between approximately 6 or 7 percent per year in &ldquo;alpha,&rdquo; or performance not explained by exposures to known expected return factors such as the market, size, and value. When including the generic momentum factor, the quantitative momentum portfolio does not provide any significant alpha, but does load positively on the momentum factor (MOM). The alpha analysis suggests that the quantitative momentum strategies stronger performance is related to higher beta exposure than the broader market (MKT&hyphen;RF beta slightly above 1), the system tends to be exposed to smaller stocks (0.17 and 0.21 on the SMB factor), <i>and very importantly, is not value</i> (HML is &ndash;0.41 and &ndash;0.16). If we compare the alpha statistics against the generic momentum strategy, the relationship between HML is less negative (i.e., diversification benefits are not as high). Overall, from a factor analysis perspective, quantitative momentum is no better or worse than generic momentum, the strategy is simply different: The strategy delivers a higher beta version of the generic momentum strategy that also has a stronger diversification benefit when coupled with value strategies. While factor analysis is important, we believe this assessment should be coupled with the results presented in Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0002"/>, which reflect more customary&mdash;and intuitive&mdash;analytics.</p></section>
+</section>
+<section xml:id="c08-sec-0009"><title type="main">A Peek Inside the<?xmltex \pgtag{\protect\nobreak}?> Black Box</title><p xml:id="c08-para-0050">Quantitative methods are often considered <i>black box,</i> and thus, shunned by many in the investment community. <i>Quants</i> generally have earned the negative assessment. Traditional &ldquo;quants&rdquo; make things too complex and too opaque, when communication can be simple and radically transparent. The logic portrayed is that by keeping strategies &ldquo;proprietary,&rdquo; the quants can keep their intellectual property from being exploited and their investors will be better off. In the context of unsustainable, always changing, trading strategies, this result is certainly true. However, when discussing sustainable, highly active long&hyphen;term investment strategies, opacity and a general lack of understanding lead to investor failure. At the pinnacle point of pain, when the most disciplined and hardened active investors earn their keep, the active investor with a clear mind, thorough understanding, and a strong conviction for their process will win. Those who do not fully understand why a process works are more likely to provide the active alpha to the clairvoyant investor who can hold on to an active portfolio like grim death.</p>
+<p xml:id="c08-para-0052">Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0007"/> lists the top 10 stocks selected by the model on November 30, 2014. This date would be the last rebalance of the portfolio in our tests, which takes advantage of the seasonality by rebalancing at the end of November 2014&mdash;since we hold the portfolio for three months, this ends up being the portfolio as of December 31, 2014, as well. Table<?xmltex \pgtag{\nobreak}?> <link href="c08-tbl-0007"/> also highlights the important summary statistics, such as the firm&apos;s momentum score (total return over the past twelve months ignoring the recent month), and the percentage of positive days minus the percentage of negative return days (remember, this is used to create the frog&hyphen;in&hyphen;the&hyphen;pan variable).</p>
+<?xmltex \OrgFixedPosition{c08-tbl-0007}?>
+<?xmltex \pgtag{\bgroup\FloatPositionBottrue\tabbotskip=-3pt}?><tabular xml:id="c08-tbl-0007"><title type="main">December 31, 2014, Quantitative Momentum Portfolio Holdings</title><table pgwide="1" frame="topbot" rowsep="0" colsep="0"><tgroup cols="4"><colspec colnum="1" colname="col1" align="left"/><colspec colnum="2" colname="col2" align="left"/><colspec colnum="3" colname="col3" align="left"/><colspec colnum="4" colname="col4" align="left"/><lwtablebody><?xmltex \pgtag{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc@{\extracolsep\fill}}\firsttablerule}?><thead valign="bottom"><!--<row rowsep="1">--><?xmltex \pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0211" lwPstyle="TabularHead">Stock Name</entry><entry colname="col2" xml:id="c08-ent-0212" lwPstyle="TabularHead">Ticker</entry><entry colname="col3" xml:id="c08-ent-0213" lwPstyle="TabularHead">Momentum</entry><entry colname="col4" xml:id="c08-ent-0214" lwPstyle="TabularHead">(&percnt; Positive)&nbsp;&ndash;&nbsp;(&percnt; Negative)</entry><!--</row>--></thead><!--<tbody valign="top">--><!--<row>--><?xmltex \\\tablerule\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0215">International Rectifier Corp.</entry>
+<entry colname="col2" xml:id="c08-ent-0216">IRF</entry>
+<entry colname="col3" xml:id="c08-ent-0217">66.1&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0218">24.3&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0219">Marriott International Inc.</entry>
+<entry colname="col2" xml:id="c08-ent-0220">MAR</entry>
+<entry colname="col3" xml:id="c08-ent-0221">62.6&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0222">22.3&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0223">N X P Semiconductors N V</entry>
+<entry colname="col2" xml:id="c08-ent-0224">NXPI</entry>
+<entry colname="col3" xml:id="c08-ent-0225">61.6&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0226">21.5&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0227">Sandisk Corp</entry>
+<entry colname="col2" xml:id="c08-ent-0228">SNDK</entry>
+<entry colname="col3" xml:id="c08-ent-0229">39.8&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0230">21.1&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0231">Dr. Pepper Snapple Group Inc.</entry>
+<entry colname="col2" xml:id="c08-ent-0232">DPS</entry>
+<entry colname="col3" xml:id="c08-ent-0233">47.7&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0234">20.3&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0235">Southwest Airlines Co.</entry>
+<entry colname="col2" xml:id="c08-ent-0236">LUV</entry>
+<entry colname="col3" xml:id="c08-ent-0237">87.0&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0238">19.1&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0239">Dynegy Inc.</entry>
+<entry colname="col2" xml:id="c08-ent-0240">DYN</entry>
+<entry colname="col3" xml:id="c08-ent-0241">42.5&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0242">18.3&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0243">Pilgrims Pride Corp New</entry>
+<entry colname="col2" xml:id="c08-ent-0244">PPC</entry>
+<entry colname="col3" xml:id="c08-ent-0245">73.4&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0246">18.3&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0247">Windstream Holdings Inc.</entry>
+<entry colname="col2" xml:id="c08-ent-0248">WIN</entry>
+<entry colname="col3" xml:id="c08-ent-0249">44.7&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0250">17.9&percnt;</entry><!--</row>-->
+<!--<row>--><?xmltex \\\pgtag{\icolcnt=1\relax}?><entry colname="col1" xml:id="c08-ent-0251">Mallinckrodt Plc.</entry>
+<entry colname="col2" xml:id="c08-ent-0252">MNK</entry>
+<entry colname="col3" xml:id="c08-ent-0253">77.4&percnt;</entry>
+<entry colname="col4" xml:id="c08-ent-0254">17.9&percnt;</entry><!--</row>-->
+<?xmltex \pgtag{\\ \lasttablerule\end{tabular*}}?><!--</tbody>-->
+</lwtablebody></tgroup>
+</table>
+</tabular><?xmltex \pgtag{\egroup}?>
+<p xml:id="c08-para-0053">Many of the names listed are well established, but they aren&apos;t necessarily the most exciting high&hyphen;momentum names in the universe. A lot of these firms are somewhat boring, but their price signals are highlighting that there is a sustained amount of positive news driving their momentum. This group of firms is in contrast to some of the higher profile momentum names that do not make the cut: these include Tesla Motors, Monster Beverage, Amgen, Green Mountain Coffee, and Solarwinds. All of these firms have high momentum, but their path to momentum is more discrete and has come via large short&hyphen;term spikes in performance.</p></section>
+<section xml:id="c08-sec-0010"><title type="main">Beating the<?xmltex \pgtag{\protect\nobreak}?> Market with<?xmltex \pgtag{\protect\nobreak}?> Quantitative Momentum</title><p xml:id="c08-para-0054">Momentum is clearly robust and has been studied and documented for many years. The epitome of this sort of research was completed by Chris Geczy and Mikhail Samonov, who confirm momentum&apos;s historical track record via an individual stock dataset that is <i>over 200 years in length</i>, stating &ldquo;that the momentum effect is not a product of data&hyphen;mining.&rdquo;<link href="c08-note-0013"/> In this chapter, we present the results of our quantitative momentum system, which is a reflection of the research and concepts outlined in this book. Our solution does not claim to be the &ldquo;best&rdquo; or the most &ldquo;optimized,&rdquo; but we do think our process is reasonable and ties back to behavioral finance in a coherent and logical way.<link href="c08-note-0014"/> But will the process work in the future? Nobody knows, but recall in the first four chapters of the book that we outlined a framework for determining whether a historically strong strategy is sustainable into the future. How can we be sure momentum is sustainable? We support this proposition using the same arguments we use to understand why value investing works. Namely, sustainable active investment strategies require the following ingredients:
+<list xml:id="c08-list-0004" style="bulleted"><listItem xml:id="c08-li-0012">A mispricing component</listItem>
+<listItem xml:id="c08-li-0013">A costly arbitrage component</listItem>
+</list>
+</p>
+<p xml:id="c08-para-0055">As far as mispricing is concerned, as long as human beings suffer from systematic expectation errors, prices will sometimes deviate from fundamentals. In the context of value, this expectation error seems to be an overreaction to negative news, on average; for momentum, the expectation error is likely tied to an underreaction to positive news and predictable seasonal effects. Value and momentum are really two sides of the same behavioral bias<?xmltex \pgtag{\nobreak}?> <?xmltex \pgtag{\hbox\bgroup}?>coin.<?xmltex \pgtag{\egroup}?></p>
+<p xml:id="c08-para-0056">But why aren&apos;t momentum strategies (or value strategies) exploited by all smart investors and arbitraged away? As we discussed, the speed at which these mispricing opportunities are eliminated depends on the cost of exploitation. Putting aside an array of transaction and information acquisition costs (which are nonzero, but we will assume don&apos;t matter for the purpose of this argument), the biggest cost to exploiting long&hyphen;lasting mispricing opportunities are agency costs, or career risk concerns. The career risk aspect is created because investors delegate a professional to manage their capital on their behalf. Unfortunately, the investors that delegate their capital to the professional fund managers often assess the<?xmltex \pgtag{\nb}?> performance of their hired manager based on their short&hyphen;term relative performance to a benchmark. But this creates a warped incentive for the<?xmltex \pgtag{\nb}?> professional fund manager. On the one hand, the fund manager wants to exploit mispricing opportunities because of the high expected long&hyphen;term performance, but on the other hand, they can do so only to the extent to which exploiting the mispricing opportunities does not cause their expected performance to deviate too far&mdash;and/or for too long&mdash;from a standard benchmark. In summary, strategies like value and momentum presumably will continue to work because they sometimes <i>fail spectacularly</i> relative to passive benchmarks. And if we follow along this line of reasoning, we only need to assume the following to believe that momentum strategies, like value strategies, are sustainable:
+<list xml:id="c08-list-0005" style="bulleted"><listItem xml:id="c08-li-0014">Investors will continue to suffer behavioral bias.</listItem>
+<listItem xml:id="c08-li-0015">Investors who delegate will be short&hyphen;sighted performance chasers.</listItem>
+</list>
+</p>
+
+<p xml:id="c08-para-0057">We think these are two assumptions we can rely on for the foreseeable future. And because of our faith in these assumptions, we believe there will always be opportunities for process&hyphen;driven, long&hyphen;term focused, disciplined investors. If we can internalize the lessons from the sustainable active framework, our belief in this framework will grant us the discipline to stick with strategies that many investors find extremely uncomfortable. The ability to stay disciplined to a process is arguably the most important aspect of being a successful investor. How one actually invests is almost a secondary issue. But as is highlighted in a quote attributed to Warren Buffett, &ldquo;Investing is simple, but not easy.&rdquo;</p></section>
+<?xmltex \pgtag{\tablenotecnt=6\def\itemwd{16.}}?><noteGroup xml:id="c08-ntgp-0001"><title type="main">Notes</title>
+<note xml:id="c08-note-0001">James Simmons, &ldquo;Mathematics, Common Sense, and Good Luck: My Life and Career,&rdquo; MIT Seminar, January 24, 2011.</note>
+<note xml:id="c08-note-0002">Cliff Asness, Andrea Frazzini, Ron Israel, and Toby Moskowitz, &ldquo;Fact, Fiction, and Momentum Investing,&rdquo; <i>The Journal of Portfolio Management</i> 40 (2014): 75&ndash;92.</note>
+<note xml:id="c08-note-0003">Andrea Frazzini, Ronen Israel, and Toby Moskowitz, &ldquo;Trading Costs of Asset Pricing Anomalies,&rdquo;AQR working paper, 2014.</note>
+<note xml:id="c08-note-0004">David A. Lesmond, Michael J. Schill, and Chunsheng Zhou, &ldquo;The Illusory Nature of Momentum Profits,&rdquo; <i>Journal of Financial Economics</i> 71 (2004): 349&ndash;380.</note>
+<note xml:id="c08-note-0005">Similar to the end of Chapter <exlink href="urn:x-wiley:9781119237198:xml-component:w9781119237198c07"/>, our analysis start date changes slightly from January 1, 1927, to March 1, 1927, to facilitate the seasonal rebalance.</note>
+<note xml:id="c08-note-0006">William Beaver, Maureen McNichols, and Richard Price, &ldquo;Delisting Returns and Their Effect on Accounting&hyphen;based Market Anomalies,&rdquo; <i>Journal of Accounting and Economics</i> 43 (2007): 341&ndash;368.</note>
+<note xml:id="c08-note-0007">Chris Geczy and Mikhail Samonov, &ldquo;Two Centuries of Price Return Momentum,&rdquo; <i>Financial Analysts Journal</i> (2016).</note>
+<note xml:id="c08-note-0008">William F. Sharpe, &ldquo;Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk,&rdquo; <i>Journal of Finance</i> 19(3) (1964): 425&ndash;442.</note>
+<note xml:id="c08-note-0009">Eugene Fama and Kenneth French, &ldquo;Common Risk Factors in the Returns on Stocks and bonds,&rdquo; <i>Journal of Financial Economics</i> 33 (1993): 3&ndash;56.</note>
+<note xml:id="c08-note-0010">Mark Carhart, &ldquo;On Persistence in Mutual Fund Performance,&rdquo; <i>Journal of Finance</i> 52 (1997): 57&ndash;82.</note>
+<note xml:id="c08-note-0011">We also conduct analysis using the Fama and French five&hyphen;factor model, which includes profitability and investment factors. Since these factors are only available after 1963, we do not show these results in our calculations. In out&hyphen;of&hyphen;<?xmltex \pgtag{\break}?>sample tests (1963&ndash;2014), we include the 5&hyphen;factor model and find qualitatively similar results.</note>
+<note xml:id="c08-note-0012">mba.tuck.dartmouth.edu/pages/faculty/ken.french/data&uscore;library.html, accessed 3/1/2016.</note>
+<note xml:id="c08-note-0013">Chris Geczy and Mikhail Samonov.</note>
+<note xml:id="c08-note-0014">We have conducted many additional tests and analysis not mentioned in this chapter. Please contact the authors at www.alphaarchitect.com/contact for additional results (e.g., annual returns).</note></noteGroup>
+</body>
+</component>
